@@ -7,6 +7,9 @@
 CThostFtdcMdSpi类。
 """
 
+from typing import List
+from itertools import chain
+
 from logger.logger import logger
 
 import thostmduserapi as user_api
@@ -52,6 +55,7 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
     """
 
     _brokers = {}
+    _subscribe = []
 
     def __init__(self, api: "CThostFtdcMdApi", userinfo: structs.UserLoginField):
         user_api.CThostFtdcMdSpi.__init__(self)
@@ -104,7 +108,8 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
             f"收到登陆请求返回信息，SessionID={pRspUserLogin.SessionID},ErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}"
         )
         logger.info("登陆成功，发出订阅行情请求")
-        ret = self._api.SubscribeMarketData(["cu2201".encode('utf-8')], 1)
+        to_sub = [x.encode('utf-8') for x in self._subscribe]
+        ret = self._api.SubscribeMarketData(to_sub, 1)
         if ret != 0:
             logger.error("深度行情订阅失败，即将退出系统")
             exit(-1)
@@ -127,7 +132,8 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
         logger.info(
             f"收到登出请求返回信息，UserID={pUserLogout.UserID},ErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}"
         )
-        self._api.UnSubscribeMarketData(["cu2201".encode('utf-8')], 1)
+        to_unsub = [x.encode('utf-8') for x in self._subscribe]
+        self._api.UnSubscribeMarketData(to_unsub, 1)
 
     def OnRspQryMulticastInstrument(
             self,
@@ -248,3 +254,6 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
         """注册broker，用户处理数据"""
         self._brokers[name] = broker
         logger.info(f"数据处理Broker {name} 挂载成功")
+
+    def set_contracts(self, contracts: List[str]):
+        self._subscribe = chain.from_iterable([self._subscribe, contracts])

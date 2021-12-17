@@ -813,3 +813,30 @@
 2021-12-15 20:20:12.245 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
 2021-12-15 20:20:12.248 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
 2021-12-15 20:20:12.490 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-17 15:26:32.033 | WARNING  | __main__:create_group:36 - redis中没有redis_broker订阅流，即将退出程序...
+2021-12-17 15:26:50.181 | INFO     | ftdc.user:register:250 - 数据处理Broker redis 挂载成功
+2021-12-17 15:26:50.269 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-17 15:26:50.271 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-17 15:26:50.298 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-17 15:26:50.298 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-17 15:26:50.339 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-17 15:28:44.912 | WARNING  | __main__:create_group:36 - redis中没有redis_broker订阅流，即将退出程序...
+2021-12-17 15:28:48.368 | WARNING  | __main__:create_group:36 - redis中没有redis_broker订阅流，即将退出程序...
+2021-12-17 15:28:55.165 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-17 15:28:55.226 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-17 15:28:55.227 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-17 15:28:55.232 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-17 15:28:55.232 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-17 15:28:55.238 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-17 15:45:19.251 | INFO     | ftdc.user:register:256 - 数据处理Broker redis 挂载成功
+2021-12-17 15:45:19.580 | INFO     | ftdc.user:OnFrontConnected:70 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-17 15:45:19.582 | INFO     | ftdc.user:_login:242 - 登陆请求发送成功
+2021-12-17 15:45:19.649 | INFO     | ftdc.user:OnRspUserLogin:107 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-17 15:45:19.650 | INFO     | ftdc.user:OnRspUserLogin:110 - 登陆成功，发出订阅行情请求
+2021-12-17 15:45:19.682 | INFO     | ftdc.user:OnRspSubMarketData:185 - 行情订阅成功,InstrumentID=ni2201
+2021-12-17 15:45:44.195 | INFO     | ftdc.user:register:256 - 数据处理Broker redis 挂载成功
+2021-12-17 15:45:44.458 | INFO     | ftdc.user:OnFrontConnected:70 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-17 15:45:44.461 | INFO     | ftdc.user:_login:242 - 登陆请求发送成功
+2021-12-17 15:45:44.576 | INFO     | ftdc.user:OnRspUserLogin:107 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-17 15:45:44.577 | INFO     | ftdc.user:OnRspUserLogin:110 - 登陆成功，发出订阅行情请求
+2021-12-17 15:45:44.661 | INFO     | ftdc.user:OnRspSubMarketData:185 - 行情订阅成功,InstrumentID=ni2201

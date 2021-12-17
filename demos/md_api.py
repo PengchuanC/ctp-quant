@@ -8,6 +8,7 @@ if __name__ == '__main__':
     userinfo = structs.UserLoginField(BrokerID='9999', UserID='195076', Password='Asin#940213')
     api = user_api.CThostFtdcMdApi_CreateFtdcMdApi(f'{USERINFO}/')
     spi = MdUserApi(api, userinfo)
+    spi.set_contracts(['ni2201', 'cu2201'])
     broker = RedisBroker(RedisBrokerConfig('10.170.139.12'))
     broker.register('redis', spi)
     '''以下是7*24小时环境'''
