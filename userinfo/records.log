@@ -1,0 +1,815 @@
+2021-12-07 11:22:23.696 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 11:22:38.574 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 11:23:07.008 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 11:23:07.010 | INFO     | __main__:_login:112 - 登陆完成，等待登陆回调
+2021-12-07 11:23:07.017 | INFO     | __main__:OnRspUserLogin:100 - 登陆完成
+2021-12-07 11:25:23.790 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 11:25:23.793 | INFO     | __main__:_login:114 - 登陆请求发送成功
+2021-12-07 11:25:23.797 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 13:54:23.617 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 13:54:23.619 | INFO     | __main__:_login:224 - 登陆请求发送成功
+2021-12-07 13:54:23.626 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 13:54:42.643 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 13:54:42.646 | INFO     | __main__:_login:225 - 登陆请求发送成功
+2021-12-07 13:54:42.651 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 13:55:34.378 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 13:55:34.380 | INFO     | __main__:_login:225 - 登陆请求发送成功
+2021-12-07 13:55:34.597 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 13:55:34.636 | INFO     | __main__:OnRspSubMarketData:170 - 订阅行情
+2021-12-07 13:55:34.643 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:36.716 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:39.035 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:39.726 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:39.778 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:40.698 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:41.212 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:42.926 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:43.207 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:44.205 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:45.307 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:55:46.452 | INFO     | __main__:OnRtnDepthMarketData:207 - 深度行情通知
+2021-12-07 13:57:23.132 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 13:57:23.134 | INFO     | __main__:_login:228 - 登陆请求发送成功
+2021-12-07 13:57:23.141 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 13:57:23.141 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 13:57:23.148 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 13:57:23.148 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:23.221 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:24.235 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:24.736 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:25.214 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:25.957 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:26.249 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:27.002 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:27.720 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:27.721 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:30.195 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 13:57:30.930 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:47.086 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 14:10:47.088 | INFO     | __main__:_login:228 - 登陆请求发送成功
+2021-12-07 14:10:47.098 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 14:10:47.098 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 14:10:47.110 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 14:10:47.110 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:47.672 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:47.794 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:48.200 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:48.929 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:49.641 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:49.697 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:50.197 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:50.715 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:51.418 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:52.181 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:10:52.181 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:44.366 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 14:11:44.368 | INFO     | __main__:_login:228 - 登陆请求发送成功
+2021-12-07 14:11:44.376 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 14:11:44.376 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 14:11:44.386 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 14:11:44.386 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:44.681 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:45.404 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:45.714 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:46.188 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:47.699 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:48.220 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:11:49.429 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:12:35.844 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 14:12:35.846 | INFO     | __main__:_login:229 - 登陆请求发送成功
+2021-12-07 14:12:35.876 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 14:12:35.876 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 14:12:35.884 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 14:12:35.884 | INFO     | __main__:OnRtnDepthMarketData:211 - 深度行情通知
+2021-12-07 14:12:36.220 | INFO     | __main__:OnRtnDepthMarketData:211 - 深度行情通知
+2021-12-07 14:12:37.432 | INFO     | __main__:OnRtnDepthMarketData:211 - 深度行情通知
+2021-12-07 14:12:37.738 | INFO     | __main__:OnRtnDepthMarketData:211 - 深度行情通知
+2021-12-07 14:13:27.857 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 14:13:27.860 | INFO     | __main__:_login:229 - 登陆请求发送成功
+2021-12-07 14:13:27.910 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 14:13:27.911 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 14:13:27.919 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 14:13:27.919 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:28.210 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:28.700 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:29.180 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:30.435 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:30.711 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:31.204 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:31.707 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:32.223 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:32.767 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:33.465 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:33.782 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:34.231 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:34.765 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:36.228 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:36.725 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:13:37.254 | INFO     | __main__:OnRtnDepthMarketData:210 - 深度行情通知
+2021-12-07 14:14:00.817 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 14:14:00.819 | INFO     | __main__:_login:228 - 登陆请求发送成功
+2021-12-07 14:14:00.826 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 14:14:00.826 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 14:14:00.834 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 14:26:50.655 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 14:26:50.663 | INFO     | __main__:_login:228 - 登陆请求发送成功
+2021-12-07 14:26:50.881 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 14:26:50.882 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 14:26:50.890 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 18:29:47.994 | INFO     | __main__:OnFrontDisconnected:76 - 与交易所断开连接，错误代码 4097
+2021-12-07 18:30:25.614 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 18:30:25.616 | INFO     | __main__:_login:229 - 登陆请求发送成功
+2021-12-07 18:30:25.623 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 18:30:25.623 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 18:30:25.630 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-07 19:01:38.997 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-07 19:01:38.999 | INFO     | __main__:_login:229 - 登陆请求发送成功
+2021-12-07 19:01:39.005 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-07 19:01:39.005 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-07 19:01:39.011 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-08 09:04:36.465 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 09:04:36.468 | INFO     | __main__:_login:230 - 登陆请求发送成功
+2021-12-08 09:04:36.477 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 09:04:36.478 | INFO     | __main__:OnRspUserLogin:104 - 开始订阅深度行情...
+2021-12-08 09:04:36.495 | INFO     | __main__:OnRspSubMarketData:172 - 订阅行情
+2021-12-08 09:20:07.748 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 09:20:07.754 | INFO     | __main__:_login:233 - 登陆请求发送成功
+2021-12-08 09:20:11.405 | INFO     | __main__:OnFrontConnected:63 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 09:20:11.407 | INFO     | __main__:_login:233 - 登陆请求发送成功
+2021-12-08 09:20:11.414 | INFO     | __main__:OnRspUserLogin:100 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 09:20:11.414 | INFO     | __main__:OnRspUserLogin:103 - 登陆成功，发出订阅行情请求
+2021-12-08 09:20:11.421 | INFO     | __main__:OnRspSubMarketData:175 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:15:49.228 | INFO     | ftdc.user:OnFrontConnected:65 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:15:49.230 | INFO     | ftdc.user:_login:234 - 登陆请求发送成功
+2021-12-08 10:15:49.236 | INFO     | ftdc.user:OnRspUserLogin:102 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:15:49.236 | INFO     | ftdc.user:OnRspUserLogin:105 - 登陆成功，发出订阅行情请求
+2021-12-08 10:15:49.271 | INFO     | ftdc.user:OnRspSubMarketData:177 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:16:28.637 | INFO     | ftdc.user:OnFrontConnected:65 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:16:28.640 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:16:28.645 | INFO     | ftdc.user:OnRspUserLogin:102 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:16:28.646 | INFO     | ftdc.user:OnRspUserLogin:105 - 登陆成功，发出订阅行情请求
+2021-12-08 10:16:28.651 | INFO     | ftdc.user:OnRspSubMarketData:177 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:17:12.751 | INFO     | ftdc.user:OnFrontConnected:65 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:17:12.753 | INFO     | ftdc.user:_login:234 - 登陆请求发送成功
+2021-12-08 10:17:12.771 | INFO     | ftdc.user:OnRspUserLogin:102 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:17:12.771 | INFO     | ftdc.user:OnRspUserLogin:105 - 登陆成功，发出订阅行情请求
+2021-12-08 10:17:12.777 | INFO     | ftdc.user:OnRspSubMarketData:177 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:18:35.727 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:18:35.729 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:18:35.734 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:18:35.734 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:18:35.755 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:18:53.880 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:18:53.882 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:18:53.903 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:18:53.903 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:18:53.910 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:19:51.497 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:19:51.500 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:19:51.507 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:19:51.507 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:19:51.513 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:20:08.064 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:20:08.067 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:20:08.074 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:20:08.074 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:20:08.081 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:23:32.465 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:23:32.468 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:23:32.474 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:23:32.474 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:23:32.480 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:24:27.060 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:24:27.063 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:24:27.155 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:24:27.155 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:24:27.176 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:24:41.851 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:24:41.853 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:24:41.859 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:24:41.859 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:24:41.864 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:25:26.819 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:25:26.822 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:25:26.886 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:25:26.886 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:25:26.998 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:26:10.746 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:26:10.748 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:26:10.887 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:26:10.887 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:26:11.031 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:26:57.479 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:26:57.481 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:26:57.489 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:26:57.489 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:26:57.494 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:33:18.366 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:33:18.368 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:33:18.583 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:33:18.583 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:33:18.590 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:37:46.006 | INFO     | ftdc.user:register:250 - 数据处理Broker redis 挂载成功
+2021-12-08 10:37:46.219 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:37:46.221 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:37:46.256 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:37:46.256 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:37:46.264 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:42:44.710 | INFO     | ftdc.user:register:250 - 数据处理Broker redis 挂载成功
+2021-12-08 10:42:44.834 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:42:44.845 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:42:44.851 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:42:44.851 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:42:44.858 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:43:14.857 | INFO     | ftdc.user:register:250 - 数据处理Broker redis 挂载成功
+2021-12-08 10:43:15.097 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:43:15.100 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:43:15.106 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:43:15.106 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:43:15.129 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:47:21.958 | INFO     | ftdc.user:register:250 - 数据处理Broker redis 挂载成功
+2021-12-08 10:47:22.005 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:47:22.007 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-08 10:47:22.012 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:47:22.012 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:47:22.038 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:47:45.184 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 10:47:45.839 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:47:45.843 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:47:45.849 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:47:45.849 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:47:45.855 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 10:49:28.145 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 10:49:28.185 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 10:49:28.187 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 10:49:28.398 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 10:49:28.398 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 10:49:28.405 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:07:24.300 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:07:24.413 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:07:24.415 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:07:24.422 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:07:24.422 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:07:24.429 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:16:10.750 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:16:10.960 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:16:10.962 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:16:10.974 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:16:10.974 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:16:10.981 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:17:33.249 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:17:33.286 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:17:33.288 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:17:33.295 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:17:33.295 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:17:33.301 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:21:46.179 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:21:46.236 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:21:46.238 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:21:46.250 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:21:46.251 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:21:46.270 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:30:28.229 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:30:28.274 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:30:28.276 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:30:28.500 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:30:28.500 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:30:28.509 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:37:43.025 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:37:43.061 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:37:43.065 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:37:43.072 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:37:43.072 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:37:43.090 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:39:50.562 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:39:50.605 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:39:50.607 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:39:50.612 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:39:50.612 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:39:50.619 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:41:15.855 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:41:15.929 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:41:15.932 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:41:15.938 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:41:15.939 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:41:15.947 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:44:48.615 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:44:50.968 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:44:50.971 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:44:50.979 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:44:50.980 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:44:50.988 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:50:49.921 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:50:49.988 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:50:49.992 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:50:50.001 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:50:50.003 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:50:50.010 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:51:53.260 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:51:53.321 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:51:53.324 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:51:53.352 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:51:53.353 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:51:53.385 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:53:05.417 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:53:05.510 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:53:05.513 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:53:05.525 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:53:05.526 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:53:05.534 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:53:16.408 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:53:16.461 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:53:16.464 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:53:16.481 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:53:16.485 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:53:16.491 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 13:54:26.823 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 13:54:26.886 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 13:54:26.889 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 13:54:26.897 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 13:54:26.898 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 13:54:26.907 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:36:54.564 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:36:54.658 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:36:54.662 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:36:54.681 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:36:54.683 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:36:54.706 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:39:12.232 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:39:12.700 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:39:12.703 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:39:12.828 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:39:12.830 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:39:13.391 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:42:38.080 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:42:39.301 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:42:39.303 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:43:05.656 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:43:05.704 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:43:05.707 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:43:05.713 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:43:05.714 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:43:05.722 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:48:52.160 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 15:48:53.874 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:48:53.878 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:48:54.109 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:48:54.110 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:48:54.332 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:50:21.126 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-08 15:50:22.340 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:50:22.344 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:50:23.122 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:50:23.126 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:50:24.152 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:53:32.122 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:53:34.953 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:53:34.961 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:53:35.223 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:53:35.226 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:54:09.795 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:54:15.344 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:54:15.347 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:54:16.173 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:54:16.175 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:54:17.751 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 15:58:40.879 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 15:58:40.975 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 15:58:40.978 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 15:58:41.007 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 15:58:41.009 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 15:58:41.031 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:00:47.083 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:00:48.555 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:00:48.558 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:00:48.653 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:00:48.655 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:00:48.758 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:10:38.040 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:10:38.114 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:10:38.116 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:10:38.129 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:10:38.130 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:10:38.144 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:12:55.698 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:12:55.767 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:12:55.769 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:12:55.785 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:12:55.787 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:12:55.804 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:15:45.964 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:15:47.130 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:15:47.133 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:15:47.339 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:15:47.341 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:15:47.833 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:16:22.132 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:16:22.192 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:16:22.193 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:16:22.204 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:16:22.205 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:16:22.213 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:20:23.762 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:20:24.473 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:20:24.476 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:20:24.692 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:20:24.697 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:20:24.925 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-08 16:21:03.075 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-08 16:21:03.139 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-08 16:21:03.142 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-08 16:21:03.155 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-08 16:21:03.157 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-08 16:21:03.171 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-09 09:09:40.779 | INFO     | ftdc.user:register:249 - 数据处理Broker redis 挂载成功
+2021-12-09 09:09:41.056 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-09 09:09:41.061 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-09 09:09:41.067 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-09 09:09:41.074 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-09 09:09:41.086 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-09 19:57:30.825 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-09 19:57:34.638 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-09 20:02:39.637 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-09 20:12:35.615 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-09 20:17:26.635 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-09 20:17:26.638 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-09 20:17:26.644 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-09 20:17:26.645 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-09 20:17:26.653 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-09 20:19:10.341 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-09 20:19:13.608 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-09 20:19:13.650 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-09 20:19:13.653 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-09 20:19:13.662 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-09 20:19:13.664 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-09 20:19:13.677 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-10 13:18:09.532 | INFO     | ftdc.trader:OnFrontConnected:23 - 交易服务器已连接，服务器地址为 9999
+2021-12-10 13:18:24.903 | INFO     | ftdc.trader:OnFrontConnected:23 - 交易服务器已连接，服务器地址为 9999
+2021-12-10 13:18:55.985 | INFO     | ftdc.trader:OnFrontConnected:23 - 交易服务器已连接，服务器地址为 9999
+2021-12-10 14:38:54.338 | INFO     | ftdc.trader:OnFrontConnected:36 - 交易服务器已连接
+2021-12-10 14:39:11.637 | INFO     | ftdc.trader:OnFrontConnected:36 - 交易服务器已连接
+2021-12-10 14:39:23.510 | INFO     | ftdc.trader:OnFrontConnected:37 - 交易服务器已连接
+2021-12-10 14:39:35.211 | INFO     | ftdc.trader:OnFrontConnected:37 - 交易服务器已连接
+2021-12-10 14:39:45.067 | INFO     | ftdc.trader:OnFrontConnected:38 - 交易服务器已连接
+2021-12-10 14:39:54.404 | INFO     | ftdc.trader:OnFrontConnected:39 - 交易服务器已连接
+2021-12-10 14:40:17.276 | INFO     | ftdc.trader:OnFrontConnected:39 - 交易服务器已连接
+2021-12-10 14:40:17.276 | INFO     | ftdc.trader:_auth:35 - 已发送客户端认证请求
+2021-12-10 14:41:08.444 | INFO     | ftdc.trader:OnFrontConnected:36 - 交易服务器已连接
+2021-12-10 14:41:08.444 | INFO     | ftdc.trader:_auth:32 - 已发送客户端认证请求
+2021-12-10 14:41:42.857 | INFO     | ftdc.trader:OnFrontConnected:36 - 交易服务器已连接
+2021-12-10 14:41:42.858 | INFO     | ftdc.trader:_auth:32 - 已发送客户端认证请求
+2021-12-10 14:43:33.321 | INFO     | ftdc.trader:OnFrontConnected:36 - 交易服务器已连接
+2021-12-10 14:43:33.321 | INFO     | ftdc.trader:_auth:32 - 已发送客户端认证请求
+2021-12-10 14:49:31.593 | INFO     | ftdc.trader:OnFrontConnected:48 - 交易服务器已连接
+2021-12-10 14:49:31.594 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 14:49:52.930 | INFO     | ftdc.trader:OnFrontConnected:48 - 交易服务器已连接
+2021-12-10 14:49:52.931 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 14:49:53.439 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 14:49:53.447 | INFO     | ftdc.trader:OnRspUserLogin:98 - 收到登陆请求返回信息, SessionID=-124185762,ErrorID=0,ErrorMsg=正确
+2021-12-10 16:03:08.145 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-10 16:03:08.184 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-10 16:03:08.186 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-10 16:03:08.192 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-10 16:03:08.194 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-10 16:03:08.224 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-10 17:21:32.393 | INFO     | ftdc.trader:OnFrontConnected:48 - 交易服务器已连接
+2021-12-10 17:21:32.394 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:21:32.692 | INFO     | ftdc.trader:OnRspAuthenticate:76 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:21:33.102 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:21:34.237 | INFO     | ftdc.trader:OnRspUserLogin:93 - 收到登陆请求返回信息, SessionID=472357079,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:23:46.841 | INFO     | ftdc.trader:OnFrontConnected:48 - 交易服务器已连接
+2021-12-10 17:23:46.841 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:23:46.853 | INFO     | ftdc.trader:OnRspAuthenticate:76 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:23:47.221 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:23:47.229 | INFO     | ftdc.trader:OnRspUserLogin:87 - 收到登陆请求返回信息, SessionID=481140273,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:25:38.765 | INFO     | ftdc.trader:OnFrontConnected:48 - 交易服务器已连接
+2021-12-10 17:25:38.765 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:25:38.777 | INFO     | ftdc.trader:OnRspAuthenticate:76 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:25:39.142 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:25:39.149 | INFO     | ftdc.trader:OnRspUserLogin:87 - 收到登陆请求返回信息, SessionID=488481451,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:34:58.557 | INFO     | ftdc.trader:OnFrontDisconnected:56 - 交易服务器已断开连接，连接断开原因 4097
+2021-12-10 17:34:59.606 | INFO     | ftdc.trader:OnFrontConnected:48 - 交易服务器已连接
+2021-12-10 17:34:59.606 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:34:59.619 | INFO     | ftdc.trader:OnRspAuthenticate:76 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:35:00.002 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:35:00.009 | INFO     | ftdc.trader:OnRspUserLogin:87 - 收到登陆请求返回信息, SessionID=525252158,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:35:02.599 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-10 17:35:02.678 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-10 17:35:02.681 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-10 17:35:02.686 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-10 17:35:02.696 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-10 17:35:02.709 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-10 17:35:38.468 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:35:38.469 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:35:42.753 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:35:43.134 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:35:43.141 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=527808314,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:37:06.618 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-10 17:37:06.680 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-10 17:37:06.683 | INFO     | ftdc.user:_login:235 - 登陆请求发送成功
+2021-12-10 17:37:06.692 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-10 17:37:06.694 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-10 17:37:06.699 | INFO     | ftdc.user:OnRspSubMarketData:178 - 行情订阅成功,InstrumentID=cu2201
+2021-12-10 17:37:11.170 | INFO     | ftdc.trader:OnFrontConnected:58 - 交易服务器已连接
+2021-12-10 17:37:11.170 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:37:11.181 | INFO     | ftdc.trader:OnRspAuthenticate:86 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:37:11.558 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:37:11.563 | INFO     | ftdc.trader:OnRspUserLogin:97 - 收到登陆请求返回信息, SessionID=532265207,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:37:21.238 | INFO     | ftdc.trader:OnFrontConnected:59 - 交易服务器已连接
+2021-12-10 17:37:21.239 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:37:21.250 | INFO     | ftdc.trader:OnRspAuthenticate:87 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:37:21.608 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:37:21.614 | INFO     | ftdc.trader:OnRspUserLogin:98 - 收到登陆请求返回信息, SessionID=534493651,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:37:40.345 | INFO     | ftdc.trader:OnFrontConnected:60 - 交易服务器已连接
+2021-12-10 17:37:40.346 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:37:40.358 | INFO     | ftdc.trader:OnRspAuthenticate:88 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:37:41.133 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:37:41.139 | INFO     | ftdc.trader:OnRspUserLogin:99 - 收到登陆请求返回信息, SessionID=535804494,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:37:49.844 | INFO     | ftdc.trader:OnFrontConnected:61 - 交易服务器已连接
+2021-12-10 17:37:49.844 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:37:49.856 | INFO     | ftdc.trader:OnRspAuthenticate:89 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:37:50.211 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:37:50.217 | INFO     | ftdc.trader:OnRspUserLogin:100 - 收到登陆请求返回信息, SessionID=536394377,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:38:12.514 | INFO     | ftdc.trader:OnFrontConnected:61 - 交易服务器已连接
+2021-12-10 17:38:12.514 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:38:12.526 | INFO     | ftdc.trader:OnRspAuthenticate:89 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:38:12.885 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:38:12.890 | INFO     | ftdc.trader:OnRspUserLogin:100 - 收到登陆请求返回信息, SessionID=537901842,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:38:12.891 | INFO     | ftdc.trader:_qry_settlement_info:57 - 已发送投资结果查询请求
+2021-12-10 17:38:53.454 | INFO     | ftdc.trader:OnFrontConnected:58 - 交易服务器已连接
+2021-12-10 17:38:53.456 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:38:53.471 | INFO     | ftdc.trader:OnRspAuthenticate:86 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:38:53.832 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:38:53.844 | INFO     | ftdc.trader:OnRspUserLogin:97 - 收到登陆请求返回信息, SessionID=540589088,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:39:11.921 | INFO     | ftdc.trader:OnFrontConnected:58 - 交易服务器已连接
+2021-12-10 17:39:11.922 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:39:11.936 | INFO     | ftdc.trader:OnRspAuthenticate:86 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:39:12.289 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:39:12.296 | INFO     | ftdc.trader:OnRspUserLogin:97 - 收到登陆请求返回信息, SessionID=541768858,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:39:12.296 | INFO     | ftdc.trader:_qry_settlement_info:54 - 已发送投资结果查询请求
+2021-12-10 17:46:56.580 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:46:56.581 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:46:56.593 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:46:57.017 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:46:57.023 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=572246522,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:46:57.023 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:47:54.399 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:47:54.400 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:47:54.412 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:47:54.781 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:47:54.807 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=576047974,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:47:54.807 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:49:03.935 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:49:03.936 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:49:03.949 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:49:04.313 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:49:04.319 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=580570393,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:49:04.320 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:49:15.432 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:49:15.433 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:49:15.445 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:49:15.802 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:49:15.828 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=581356899,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:49:15.828 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:49:57.475 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:49:57.475 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:49:57.488 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:49:57.839 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:49:57.845 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=584109669,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:49:57.845 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:50:11.346 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:50:11.347 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:50:11.358 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:50:11.724 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:50:11.730 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=585027256,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:50:11.730 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:50:55.712 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:50:55.713 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:50:55.722 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:50:56.080 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:50:56.086 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=587911117,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:50:56.086 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:58:26.068 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 17:58:26.068 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 17:58:26.081 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 17:58:26.443 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 17:58:26.450 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=617405296,ErrorID=0,ErrorMsg=正确
+2021-12-10 17:58:26.450 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 17:58:26.700 | INFO     | ftdc.trader:OnRspQrySettlementInfo:475 - 结算结果查询为空
+2021-12-10 18:02:58.341 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:02:58.341 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:02:58.352 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:02:58.724 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:02:58.730 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=635298041,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:02:58.731 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:03:49.297 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:03:49.297 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:03:49.310 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:03:49.674 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:03:49.679 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=638575041,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:03:49.679 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:04:38.413 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:04:38.413 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:04:38.427 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:04:38.789 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:04:38.892 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=641852032,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:04:38.892 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:04:48.510 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:04:48.511 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:04:48.523 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:04:48.870 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:04:48.876 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=642507429,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:04:48.877 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:05:04.040 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:05:04.040 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:05:04.053 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:05:04.408 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:05:04.415 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=643490529,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:05:04.415 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:06:06.778 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:06:06.779 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:06:06.794 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:06:07.158 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:06:07.165 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=647553998,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:06:07.165 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:06:34.335 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:06:34.335 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:06:34.350 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:06:34.705 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:06:34.715 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=649454654,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:06:34.715 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:06:39.246 | INFO     | ftdc.trader:OnRspQrySettlementInfo:474 - 结算结果查询为空
+2021-12-10 18:06:39.247 | INFO     | ftdc.trader:OnRspQrySettlementInfo:479 - 交易端-发送结算结果确认请求成功
+2021-12-10 18:10:27.100 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:10:27.100 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:10:27.112 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:10:27.470 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:10:27.476 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=664659928,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:10:27.476 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:10:27.491 | INFO     | ftdc.trader:OnRspQrySettlementInfo:475 - 结算结果查询为空
+2021-12-10 18:10:27.491 | INFO     | ftdc.trader:OnRspQrySettlementInfo:480 - 交易端-发送结算结果确认请求成功
+2021-12-10 18:10:27.497 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:275 - 交易端-投资者结算结果确认完成
+2021-12-10 18:30:20.098 | INFO     | ftdc.trader:OnFrontConnected:57 - 交易服务器已连接
+2021-12-10 18:30:20.099 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 18:30:20.112 | INFO     | ftdc.trader:OnRspAuthenticate:85 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 18:30:20.542 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 18:30:20.547 | INFO     | ftdc.trader:OnRspUserLogin:96 - 收到登陆请求返回信息, SessionID=742849287,ErrorID=0,ErrorMsg=正确
+2021-12-10 18:30:20.548 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 18:30:20.563 | INFO     | ftdc.trader:OnRspQrySettlementInfo:475 - 结算结果查询为空
+2021-12-10 18:30:20.563 | INFO     | ftdc.trader:OnRspQrySettlementInfo:480 - 交易端-发送结算结果确认请求成功
+2021-12-10 18:30:20.568 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:275 - 交易端-投资者结算结果确认完成
+2021-12-10 19:16:57.451 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-10 19:16:57.452 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-10 19:16:57.465 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-10 19:16:57.825 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-10 19:16:57.832 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=926246570,ErrorID=0,ErrorMsg=正确
+2021-12-10 19:16:57.833 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-10 19:16:58.073 | INFO     | ftdc.trader:OnRspQrySettlementInfo:480 - 结算结果查询为空
+2021-12-10 19:16:58.073 | INFO     | ftdc.trader:OnRspQrySettlementInfo:485 - 交易端-发送结算结果确认请求成功
+2021-12-10 19:16:58.080 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:280 - 交易端-投资者结算结果确认完成
+2021-12-13 09:42:21.866 | INFO     | ftdc.user:register:250 - 数据处理Broker redis 挂载成功
+2021-12-13 09:42:21.946 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-13 09:42:21.950 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-13 09:42:21.956 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-13 09:42:21.957 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-13 09:42:21.963 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-13 17:20:47.788 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-13 17:20:47.788 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-13 17:20:47.802 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-13 17:20:49.156 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-13 17:20:49.172 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=276051613,ErrorID=0,ErrorMsg=正确
+2021-12-13 17:20:49.172 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-13 17:20:49.384 | INFO     | ftdc.trader:OnRspQrySettlementInfo:480 - 结算结果查询为空
+2021-12-13 17:20:49.385 | INFO     | ftdc.trader:OnRspQrySettlementInfo:485 - 交易端-发送结算结果确认请求成功
+2021-12-13 17:20:49.392 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:280 - 交易端-投资者结算结果确认完成
+2021-12-13 19:57:27.041 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-13 19:57:30.181 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-13 20:02:34.176 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-13 20:12:40.177 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-13 20:14:10.518 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-13 20:14:10.528 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-13 20:14:10.535 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-13 20:14:10.537 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-13 20:14:10.546 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-13 20:17:08.895 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-13 20:17:08.942 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-13 20:17:08.946 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-13 20:17:08.966 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-13 20:17:08.968 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-13 20:17:08.997 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-14 05:32:00.385 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 05:32:00.914 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-14 05:32:00.916 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-14 05:32:00.924 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-14 05:32:00.926 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-14 05:32:00.934 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-14 07:34:53.482 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 07:34:53.591 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-14 07:34:53.598 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-14 07:34:53.612 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-14 07:34:53.614 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-14 07:34:53.628 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-14 17:33:37.594 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 17:33:47.835 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-14 17:33:47.845 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-14 17:33:47.851 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-14 17:33:47.852 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-14 17:33:47.859 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-14 18:13:07.434 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 18:13:10.688 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 18:18:14.685 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 18:28:11.662 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 18:43:19.651 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 18:48:23.615 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 18:53:29.631 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:03:26.615 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:08:32.583 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:18:29.589 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:23:33.582 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:30:28.557 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:37:43.554 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:44:20.583 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 19:50:47.543 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 20:00:54.520 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 20:08:39.521 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 20:15:20.849 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-14 20:15:20.860 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-14 20:15:20.871 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-14 20:15:20.873 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-14 20:15:20.882 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-14 20:16:40.350 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-14 20:16:43.520 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-14 20:16:43.521 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-14 20:16:43.528 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-14 20:16:43.530 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-14 20:16:43.537 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 03:49:21.308 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 03:49:21.383 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 03:49:21.386 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 03:49:21.394 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 03:49:21.395 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 03:49:21.400 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 05:52:00.342 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 05:52:14.123 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 05:52:14.125 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 05:52:14.132 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 05:52:14.134 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 05:52:14.142 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 15:11:18.204 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 15:11:18.306 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 15:11:18.319 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 15:11:18.327 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 15:11:18.333 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 15:11:18.343 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 15:15:53.245 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 15:15:53.320 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 15:15:53.330 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 15:15:53.336 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 15:15:53.338 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 15:15:53.345 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 17:14:39.148 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:14:43.087 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:19:48.091 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:24:52.095 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:31:27.070 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:36:31.085 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:44:06.068 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:49:53.052 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 17:54:58.057 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:00:02.051 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:10:07.032 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:19:44.023 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:25:11.128 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:31:56.033 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:49:45.023 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 18:55:42.020 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:00:48.020 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:09:44.986 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:15:51.978 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:21:06.178 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:26:20.971 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:31:24.954 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:38:09.957 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:46:04.937 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:51:10.936 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 19:59:45.921 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 20:05:10.920 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 20:10:14.923 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 20:15:49.943 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 20:19:11.515 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 20:19:11.521 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 20:19:11.529 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 20:19:11.532 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 20:19:11.539 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 20:19:45.588 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 20:19:45.646 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 20:19:45.652 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 20:19:45.659 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 20:19:45.665 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 20:19:45.676 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
+2021-12-15 20:20:12.129 | INFO     | ftdc.user:OnFrontDisconnected:79 - 与交易所断开连接，错误代码 4097
+2021-12-15 20:20:12.218 | INFO     | ftdc.user:OnFrontConnected:66 - 成功与交易所建立连接，即将进行登陆操作
+2021-12-15 20:20:12.220 | INFO     | ftdc.user:_login:236 - 登陆请求发送成功
+2021-12-15 20:20:12.245 | INFO     | ftdc.user:OnRspUserLogin:103 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
+2021-12-15 20:20:12.248 | INFO     | ftdc.user:OnRspUserLogin:106 - 登陆成功，发出订阅行情请求
+2021-12-15 20:20:12.490 | INFO     | ftdc.user:OnRspSubMarketData:179 - 行情订阅成功,InstrumentID=cu2201
