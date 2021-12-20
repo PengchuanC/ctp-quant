@@ -57,15 +57,15 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         logger.info(f'交易端-执行交易')
         self._api.ReqOrderInsert(order_info, 0)
 
-    def qry_investor_position(self, instrument_id: str):
+    def qry_investor_position(self, instrument_id: str, exchange_id: str):
         """查询投资者持仓明细"""
-        logger.info(f'交易端-持仓查询,InstrumentID={instrument_id}')
-        field: order.InvestorPositionCombineDetailField = trader_api.CThostFtdcQryInvestorPositionCombineDetailField()
+        logger.info(f'交易端-持仓查询,InstrumentID={instrument_id},ExchangeID={exchange_id}')
+        field: order.QryInvestorPositionField = trader_api.CThostFtdcQryInvestorPositionField()
         field.BrokerID = self._info.BrokerID
         field.InvestorID = self._info.UserID
-        field.CombInstrumentID = instrument_id
-        ret = self._api.ReqQryInvestorPositionCombineDetail(field, 0)
-        print("*********\n", ret)
+        field.ExchangeID = exchange_id
+        field.InstrumentID = instrument_id
+        self._api.ReqQryInvestorPosition(field, 0)
 
     def OnFrontConnected(self):
         """当客户端与交易后台建立起通信连接时（还未登录前），该方法被调用。"""
@@ -400,7 +400,8 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
             pRspInfo: structs.RspInfoField, nRequestID: int, bIsLast: bool
     ):
         """请求查询投资者持仓响应"""
-        logger.info('交易端-投资者持仓明细')
+        logger.info('交易端-投资者持仓明细(OnRspQryInvestorPosition')
+        print(pInvestorPosition.Position)
         data = {name: getattr(pInvestorPosition, name) for name in structs.InvestorPositionField._fields}
         print(data)
 
@@ -503,7 +504,7 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
             pRspInfo: structs.RspInfoField, nRequestID: int, bIsLast: bool
     ):
         """请求查询投资者持仓明细响应"""
-        pass
+        logger.info('OnRspQryInvestorPositionDetail')
 
     def OnRspQryNotice(
             self, pNotice: "CThostFtdcNoticeField",
@@ -526,7 +527,7 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
             bIsLast: bool
     ):
         """请求查询投资者持仓明细响应"""
-        pass
+        logger.info('OnRspQryInvestorPositionCombineDetail')
 
     def OnRspQryCFMMCTradingAccountKey(
             self, pCFMMCTradingAccountKey: "CThostFtdcCFMMCTradingAccountKeyField",

@@ -267,3 +267,25 @@ InvestorPositionCombineDetailField = namedtuple(
     "CThostFtdcQryInvestorPositionCombineDetailField",
     ["BrokerID", "InvestorID", "CombInstrumentID", "ExchangeID", "InvestUnitID"]
 )
+
+# 查询投资者持仓
+"""
+///查询投资者持仓
+struct CThostFtdcQryInvestorPositionField
+{
+    ///经纪公司代码
+    TThostFtdcBrokerIDType	BrokerID;
+    ///投资者代码
+    TThostFtdcInvestorIDType	InvestorID;
+    ///合约代码
+    TThostFtdcInstrumentIDType	InstrumentID;
+    ///交易所代码
+    TThostFtdcExchangeIDType	ExchangeID;
+    ///投资单元代码
+    TThostFtdcInvestUnitIDType	InvestUnitID;
+};
+"""
+QryInvestorPositionField = namedtuple(
+    "CThostFtdcQryInvestorPositionField",
+    ["BrokerID", "InvestorID", "InstrumentID", "ExchangeID", "InvestUnitID"]
+)

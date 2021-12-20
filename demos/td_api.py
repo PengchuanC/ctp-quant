@@ -1,5 +1,5 @@
 """
-模拟交易策略，交易策略放入协程，没60秒下一次单
+模拟交易策略，交易策略放入协程，每30秒下一次单
 策略中忽略交易信号的产生过程，实盘中需要实现策略
 """
 
@@ -35,11 +35,12 @@ def insert_order(trader_spi: TraderSpi):
 
 
 def strategy(trader_spi: TraderSpi):
-
     count = 0
     while count < 10:
+        time.sleep(30)
+        trader_spi.qry_investor_position('ni2201', 'SHFE')
         insert_order(trader_spi)
-        time.sleep(60)
+        count += 1
 
 
 if __name__ == '__main__':
@@ -50,11 +51,9 @@ if __name__ == '__main__':
     userinfo = structs.UserLoginField(BrokerID='9999', UserID='195076', Password='Asin#940213')
     api = trader_api.CThostFtdcTraderApi_CreateFtdcTraderApi(f'{USERINFO}/')
     spi = TraderSpi(api, userinfo, appinfo)
-    api.RegisterFront("tcp://180.168.146.187:10201")
+    api.RegisterFront("tcp://180.168.146.187:10130")
     api.RegisterSpi(spi)
 
     api.Init()
-    time.sleep(10)
-    spi.qry_investor_position('ni2201')
-    # pool.submit(strategy, spi)
+    pool.submit(strategy, spi)
     api.Join()
