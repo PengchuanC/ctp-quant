@@ -50,12 +50,14 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         qry_info_field.InvestorID = self._info.UserID
         qry_info_field.TradingDay = self._api.GetTradingDay()
         self._api.ReqQrySettlementInfo(qry_info_field, 0)
-        logger.info("已发送投资结果查询请求")
+        logger.info("交易端-已发送投资结果查询请求")
 
     def trade(self, order_info: order.InputOrderField):
         """执行交易，对不同的策略，此函数一定要重写！！！"""
         logger.info(f'交易端-执行交易')
-        self._api.ReqOrderInsert(order_info, 0)
+        ret = self._api.ReqOrderInsert(order_info, 0)
+        if ret:
+            logger.error(f'交易端-报单请求失败,ErrorCode={ret}')
 
     def qry_investor_position(self, instrument_id: str, exchange_id: str):
         """查询投资者持仓明细"""
@@ -400,11 +402,15 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
             pRspInfo: structs.RspInfoField, nRequestID: int, bIsLast: bool
     ):
         """请求查询投资者持仓响应"""
-        logger.info('交易端-投资者持仓明细(OnRspQryInvestorPosition')
-        print(pInvestorPosition.Position)
+        p = pInvestorPosition
+        logger.info(
+            f'交易端-投资者持仓明细(OnRspQryInvestorPosition)\n\tInstrumentID={p.InstrumentID}\n\tPosition={p.Position}'
+            f'\n\tLongFrozen={p.LongFrozen},LongFrozenAmount={p.LongFrozenAmount}'
+            f'\n\tShortFrozen={p.ShortFrozen},ShortFrozenAmount={p.ShortFrozenAmount}'
+            f'\n\tTradingDay={p.TradingDay}'
+        )
         data = {name: getattr(pInvestorPosition, name) for name in structs.InvestorPositionField._fields}
-        print(data)
-
+        # todo 处理持仓数据
 
     def OnRspQryTradingAccount(
             self, pTradingAccount: "CThostFtdcTradingAccountField", pRspInfo: structs.RspInfoField,

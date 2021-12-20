@@ -8,6 +8,12 @@
 import thosttraderapi as trader_api
 
 
+class DirectionType(object):
+    """买卖方向类型"""
+    buy = trader_api.THOST_FTDC_D_Buy  # 买
+    sell = trader_api.THOST_FTDC_D_Sell  # 卖
+
+
 class OrderPriceType(object):
     """报单价格条件类型"""
     any_price = trader_api.THOST_FTDC_OPT_AnyPrice  # 任意价
