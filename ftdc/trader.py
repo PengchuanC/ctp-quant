@@ -7,7 +7,7 @@
 
 import thosttraderapi as trader_api
 
-from ftdc import structs
+from ftdc import structs, order
 from logger.logger import logger
 
 
@@ -52,10 +52,20 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         self._api.ReqQrySettlementInfo(qry_info_field, 0)
         logger.info("已发送投资结果查询请求")
 
-    def trade(self):
+    def trade(self, order_info: order.InputOrderField):
         """执行交易，对不同的策略，此函数一定要重写！！！"""
-        # TODO 执行下单操作
-        pass
+        logger.info(f'交易端-执行交易')
+        self._api.ReqOrderInsert(order_info, 0)
+
+    def qry_investor_position(self, instrument_id: str):
+        """查询投资者持仓明细"""
+        logger.info(f'交易端-持仓查询,InstrumentID={instrument_id}')
+        field: order.InvestorPositionCombineDetailField = trader_api.CThostFtdcQryInvestorPositionCombineDetailField()
+        field.BrokerID = self._info.BrokerID
+        field.InvestorID = self._info.UserID
+        field.CombInstrumentID = instrument_id
+        ret = self._api.ReqQryInvestorPositionCombineDetail(field, 0)
+        print("*********\n", ret)
 
     def OnFrontConnected(self):
         """当客户端与交易后台建立起通信连接时（还未登录前），该方法被调用。"""
@@ -190,20 +200,13 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
 
     def OnRspOrderInsert(
             self,
-            pInputOrder: "CThostFtdcInputOrderField",
+            pInputOrder: order.InputOrderField,
             pRspInfo: structs.RspInfoField,
             nRequestID: int,
             bIsLast: bool
     ):
-        """
-        报单录入请求响应
-        :param pInputOrder:
-        :param pRspInfo:
-        :param nRequestID:
-        :param bIsLast:
-        :return:
-        """
-        pass
+        """报单录入请求响应"""
+        logger.info(f'交易端-报单录入请求响应\n\tErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}')
 
     def OnRspParkedOrderInsert(
             self,
@@ -393,11 +396,14 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         pass
 
     def OnRspQryInvestorPosition(
-            self, pInvestorPosition: "CThostFtdcInvestorPositionField",
+            self, pInvestorPosition: structs.InvestorPositionField,
             pRspInfo: structs.RspInfoField, nRequestID: int, bIsLast: bool
     ):
         """请求查询投资者持仓响应"""
-        pass
+        logger.info('交易端-投资者持仓明细')
+        data = {name: getattr(pInvestorPosition, name) for name in structs.InvestorPositionField._fields}
+        print(data)
+
 
     def OnRspQryTradingAccount(
             self, pTradingAccount: "CThostFtdcTradingAccountField", pRspInfo: structs.RspInfoField,
@@ -708,15 +714,22 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         """错误应答"""
         logger.error(f'交易端-请求返回结果错误,ErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}')
 
-    def OnRtnOrder(self, pOrder: "CThostFtdcOrderField"):
+    def OnRtnOrder(self, pOrder: order.OrderField):
         """报单通知"""
-        pass
+        logger.info(
+            f'交易端-报单通知\n\tOrderStatus={pOrder.OrderStatus}\n\t'
+            f'StatusMsg={pOrder.StatusMsg}\n\tLimitPrice={pOrder.LimitPrice}'
+        )
 
-    def OnRtnTrade(self, pTrade: "CThostFtdcTradeField"):
+    def OnRtnTrade(self, pTrade: order.TraderField):
         """成交通知"""
-        pass
+        logger.info(
+            f'交易端-成交通知\n\tInstrumentID={pTrade.InstrumentID}\n\tTradeID={pTrade.TradeID}'
+            f'\n\tPrice={pTrade.Price}\n\tVolume={pTrade.Volume}\n\tTradeDate={pTrade.TradeDate}'
+            f'\n\tTradeTime={pTrade.TradeTime}'
+        )
 
-    def OnErrRtnOrderInsert(self, pInputOrder: "CThostFtdcInputOrderField", pRspInfo: structs.RspInfoField):
+    def OnErrRtnOrderInsert(self, pInputOrder: order.InputOrderField, pRspInfo: structs.RspInfoField):
         """报单录入错误回报"""
         pass
 

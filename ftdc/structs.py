@@ -219,80 +219,121 @@ SettlementInfoConfirmField = namedtuple(
     ["BrokerID", "InvestorID", "ConfirmDate", "ConfirmTime", "SettlementID", "AccountID", "CurrencyID"]
 )
 
-# 报单参数
+# 投资者持仓
 """
-///输入报单
-struct CThostFtdcInputOrderField
+///投资者持仓
+struct CThostFtdcInvestorPositionField
 {
+    ///合约代码
+    TThostFtdcInstrumentIDType	InstrumentID;
     ///经纪公司代码
     TThostFtdcBrokerIDType	BrokerID;
     ///投资者代码
     TThostFtdcInvestorIDType	InvestorID;
-    ///合约代码
-    TThostFtdcInstrumentIDType	InstrumentID;
-    ///报单引用
-    TThostFtdcOrderRefType	OrderRef;
-    ///用户代码
-    TThostFtdcUserIDType	UserID;
-    ///报单价格条件
-    TThostFtdcOrderPriceTypeType	OrderPriceType;
-    ///买卖方向
-    TThostFtdcDirectionType	Direction;
-    ///组合开平标志
-    TThostFtdcCombOffsetFlagType	CombOffsetFlag;
-    ///组合投机套保标志
-    TThostFtdcCombHedgeFlagType	CombHedgeFlag;
-    ///价格
-    TThostFtdcPriceType	LimitPrice;
-    ///数量
-    TThostFtdcVolumeType	VolumeTotalOriginal;
-    ///有效期类型
-    TThostFtdcTimeConditionType	TimeCondition;
-    ///GTD日期
-    TThostFtdcDateType	GTDDate;
-    ///成交量类型
-    TThostFtdcVolumeConditionType	VolumeCondition;
-    ///最小成交量
-    TThostFtdcVolumeType	MinVolume;
-    ///触发条件
-    TThostFtdcContingentConditionType	ContingentCondition;
-    ///止损价
-    TThostFtdcPriceType	StopPrice;
-    ///强平原因
-    TThostFtdcForceCloseReasonType	ForceCloseReason;
-    ///自动挂起标志
-    TThostFtdcBoolType	IsAutoSuspend;
-    ///业务单元
-    TThostFtdcBusinessUnitType	BusinessUnit;
-    ///请求编号
-    TThostFtdcRequestIDType	RequestID;
-    ///用户强评标志
-    TThostFtdcBoolType	UserForceClose;
-    ///互换单标志
-    TThostFtdcBoolType	IsSwapOrder;
+    ///持仓多空方向
+    TThostFtdcPosiDirectionType	PosiDirection;
+    ///投机套保标志
+    TThostFtdcHedgeFlagType	HedgeFlag;
+    ///持仓日期
+    TThostFtdcPositionDateType	PositionDate;
+    ///上日持仓
+    TThostFtdcVolumeType	YdPosition;
+    ///今日持仓
+    TThostFtdcVolumeType	Position;
+    ///多头冻结
+    TThostFtdcVolumeType	LongFrozen;
+    ///空头冻结
+    TThostFtdcVolumeType	ShortFrozen;
+    ///开仓冻结金额
+    TThostFtdcMoneyType	LongFrozenAmount;
+    ///开仓冻结金额
+    TThostFtdcMoneyType	ShortFrozenAmount;
+    ///开仓量
+    TThostFtdcVolumeType	OpenVolume;
+    ///平仓量
+    TThostFtdcVolumeType	CloseVolume;
+    ///开仓金额
+    TThostFtdcMoneyType	OpenAmount;
+    ///平仓金额
+    TThostFtdcMoneyType	CloseAmount;
+    ///持仓成本
+    TThostFtdcMoneyType	PositionCost;
+    ///上次占用的保证金
+    TThostFtdcMoneyType	PreMargin;
+    ///占用的保证金
+    TThostFtdcMoneyType	UseMargin;
+    ///冻结的保证金
+    TThostFtdcMoneyType	FrozenMargin;
+    ///冻结的资金
+    TThostFtdcMoneyType	FrozenCash;
+    ///冻结的手续费
+    TThostFtdcMoneyType	FrozenCommission;
+    ///资金差额
+    TThostFtdcMoneyType	CashIn;
+    ///手续费
+    TThostFtdcMoneyType	Commission;
+    ///平仓盈亏
+    TThostFtdcMoneyType	CloseProfit;
+    ///持仓盈亏
+    TThostFtdcMoneyType	PositionProfit;
+    ///上次结算价
+    TThostFtdcPriceType	PreSettlementPrice;
+    ///本次结算价
+    TThostFtdcPriceType	SettlementPrice;
+    ///交易日
+    TThostFtdcDateType	TradingDay;
+    ///结算编号
+    TThostFtdcSettlementIDType	SettlementID;
+    ///开仓成本
+    TThostFtdcMoneyType	OpenCost;
+    ///交易所保证金
+    TThostFtdcMoneyType	ExchangeMargin;
+    ///组合成交形成的持仓
+    TThostFtdcVolumeType	CombPosition;
+    ///组合多头冻结
+    TThostFtdcVolumeType	CombLongFrozen;
+    ///组合空头冻结
+    TThostFtdcVolumeType	CombShortFrozen;
+    ///逐日盯市平仓盈亏
+    TThostFtdcMoneyType	CloseProfitByDate;
+    ///逐笔对冲平仓盈亏
+    TThostFtdcMoneyType	CloseProfitByTrade;
+    ///今日持仓
+    TThostFtdcVolumeType	TodayPosition;
+    ///保证金率
+    TThostFtdcRatioType	MarginRateByMoney;
+    ///保证金率(按手数)
+    TThostFtdcRatioType	MarginRateByVolume;
+    ///执行冻结
+    TThostFtdcVolumeType	StrikeFrozen;
+    ///执行冻结金额
+    TThostFtdcMoneyType	StrikeFrozenAmount;
+    ///放弃执行冻结
+    TThostFtdcVolumeType	AbandonFrozen;
     ///交易所代码
     TThostFtdcExchangeIDType	ExchangeID;
+    ///执行冻结的昨仓
+    TThostFtdcVolumeType	YdStrikeFrozen;
     ///投资单元代码
     TThostFtdcInvestUnitIDType	InvestUnitID;
-    ///资金账号
-    TThostFtdcAccountIDType	AccountID;
-    ///币种代码
-    TThostFtdcCurrencyIDType	CurrencyID;
-    ///交易编码
-    TThostFtdcClientIDType	ClientID;
-    ///IP地址
-    TThostFtdcIPAddressType	IPAddress;
-    ///Mac地址
-    TThostFtdcMacAddressType	MacAddress;
+    ///大商所持仓成本差值，只有大商所使用
+    TThostFtdcMoneyType	PositionCostOffset;
+    ///tas持仓手数
+    TThostFtdcVolumeType	TasPosition;
+    ///tas持仓成本
+    TThostFtdcMoneyType	TasPositionCost;
 };
 """
-InputOrderField = namedtuple(
-    "CThostFtdcInputOrderField",
+InvestorPositionField = namedtuple(
+    "CThostFtdcInvestorPositionField",
     [
-        "BrokerID", "InvestorID", "InstrumentID", "OrderRef", "UserID", "OrderPriceType", "Direction", "CombOffsetFlag",
-        "CombHedgeFlag", "LimitPrice", "VolumeTotalOriginal", "TimeCondition", "GTDDate", "VolumeCondition",
-        "MinVolume", "ContingentCondition", "StopPrice", "ForceCloseReason", "IsAutoSuspend", "BusinessUnit",
-        "RequestID", "UserForceClose", "IsSwapOrder", "ExchangeID", "InvestUnitID", "AccountID", "CurrencyID",
-        "ClientID", "IPAddress", "MacAddress"
+        "InstrumentID", "BrokerID", "InvestorID", "PosiDirection", "HedgeFlag", "PositionDate", "YdPosition",
+        "Position", "LongFrozen", "ShortFrozen", "LongFrozenAmount", "ShortFrozenAmount", "OpenVolume", "CloseVolume",
+        "OpenAmount", "CloseAmount", "PositionCost", "PreMargin", "UseMargin", "FrozenMargin", "FrozenCash",
+        "FrozenCommission", "CashIn", "Commission", "CloseProfit", "PositionProfit", "PreSettlementPrice",
+        "SettlementPrice", "TradingDay", "SettlementID", "OpenCost", "ExchangeMargin", "CombPosition", "CombLongFrozen",
+        "CombShortFrozen", "CloseProfitByDate", "CloseProfitByTrade", "TodayPosition", "MarginRateByMoney",
+        "MarginRateByVolume", "StrikeFrozen", "StrikeFrozenAmount", "AbandonFrozen", "ExchangeID", "YdStrikeFrozen",
+        "InvestUnitID", "PositionCostOffset", "TasPosition", "TasPositionCost"
     ]
 )

@@ -840,3 +840,1754 @@
 2021-12-17 15:45:44.576 | INFO     | ftdc.user:OnRspUserLogin:107 - 收到登陆请求返回信息，SessionID=0,ErrorID=0,ErrorMsg=CTP:No Error
 2021-12-17 15:45:44.577 | INFO     | ftdc.user:OnRspUserLogin:110 - 登陆成功，发出订阅行情请求
 2021-12-17 15:45:44.661 | INFO     | ftdc.user:OnRspSubMarketData:185 - 行情订阅成功,InstrumentID=ni2201
+2021-12-17 16:50:10.352 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 16:50:15.860 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 16:55:19.864 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:00:23.863 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:05:27.853 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:15:02.854 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:20:27.838 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:25:31.833 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:32:46.828 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:40:31.819 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:45:36.823 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:50:42.818 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 17:55:46.814 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 18:00:51.790 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 18:05:55.783 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-17 18:15:40.781 | INFO     | ftdc.user:OnFrontDisconnected:83 - 与交易所断开连接，错误代码 4097
+2021-12-20 14:01:28.492 | INFO     | ftdc.trader:OnFrontConnected:61 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:01:28.493 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:01:28.506 | INFO     | ftdc.trader:OnRspAuthenticate:89 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:01:29.455 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:01:29.461 | INFO     | ftdc.trader:OnRspUserLogin:100 - 交易端-收到登陆请求返回信息, SessionID=474019500,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:01:29.461 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:01:29.566 | INFO     | ftdc.trader:OnRspQrySettlementInfo:472 - 结算结果查询为空
+2021-12-20 14:01:29.566 | INFO     | ftdc.trader:OnRspQrySettlementInfo:477 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:01:29.574 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:272 - 交易端-投资者结算结果确认完成
+2021-12-20 14:03:36.369 | INFO     | ftdc.trader:OnFrontConnected:61 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:03:36.369 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:03:36.384 | INFO     | ftdc.trader:OnRspAuthenticate:89 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:03:36.769 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:03:36.777 | INFO     | ftdc.trader:OnRspUserLogin:100 - 交易端-收到登陆请求返回信息, SessionID=482475057,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:03:36.777 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:03:37.916 | INFO     | ftdc.trader:OnRspQrySettlementInfo:472 - 结算结果查询为空
+2021-12-20 14:03:37.917 | INFO     | ftdc.trader:OnRspQrySettlementInfo:477 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:03:37.926 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:272 - 交易端-投资者结算结果确认完成
+2021-12-20 14:05:46.273 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 14:05:46.319 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:05:46.319 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:05:46.332 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:05:46.712 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:05:46.719 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=490931198,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:05:46.719 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:05:48.818 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 14:05:48.818 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:05:48.825 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 14:07:52.083 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:07:52.083 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:07:52.119 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:07:52.567 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:07:52.584 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=499190197,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:07:52.585 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:07:52.624 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 14:07:52.624 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:07:52.643 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 14:08:02.011 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 14:08:02.034 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 14:08:02.036 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 14:09:47.924 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:09:47.925 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:09:47.940 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:09:48.319 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:09:48.335 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=506793722,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:09:48.336 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:09:48.337 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 14:09:48.338 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 14:09:48.613 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 14:09:48.613 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:09:48.620 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 14:09:57.665 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 14:09:57.692 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 14:09:57.693 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 14:13:20.923 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:13:20.924 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:13:20.947 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:13:21.320 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:13:21.326 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=520755440,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:13:21.327 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:13:21.328 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 14:13:21.329 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 14:13:21.330 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 14:13:21.331 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 14:13:22.093 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 14:13:22.093 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:13:22.098 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 14:13:30.892 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 14:13:31.195 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:13:31.195 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:13:31.195 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:13:31.195 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+2021-12-20 14:25:17.887 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:25:17.887 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:25:17.903 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:25:18.271 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:25:18.279 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=567753392,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:25:18.279 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:25:18.279 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 14:25:18.279 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 14:25:18.280 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 14:25:18.280 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 14:25:18.280 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:25:18.280 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:25:18.280 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:25:18.281 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+2021-12-20 14:25:20.293 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 14:25:20.294 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:25:20.308 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 14:25:27.840 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 14:25:27.865 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:25:27.869 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:25:27.870 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:25:27.870 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+2021-12-20 14:44:42.560 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 14:44:42.561 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 14:44:42.781 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 14:44:43.155 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 14:44:43.162 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=644110387,ErrorID=0,ErrorMsg=正确
+2021-12-20 14:44:43.164 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 14:44:43.165 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 14:44:43.166 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 14:44:43.167 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 14:44:43.167 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 14:44:43.174 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:43.174 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:43.175 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:43.176 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+2021-12-20 14:44:43.180 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:43.180 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:43.181 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:43.182 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+2021-12-20 14:44:43.544 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 14:44:43.544 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 14:44:43.549 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 14:44:52.535 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 14:44:52.588 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:52.588 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:52.588 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 14:44:52.621 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+2021-12-20 15:23:33.483 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:23:33.569 | INFO     | ftdc.trader:OnFrontConnected:62 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 15:23:33.570 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 15:23:33.597 | INFO     | ftdc.trader:OnRspAuthenticate:90 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 15:23:33.973 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 15:23:33.982 | INFO     | ftdc.trader:OnRspUserLogin:101 - 交易端-收到登陆请求返回信息, SessionID=796890047,ErrorID=0,ErrorMsg=正确
+2021-12-20 15:23:33.982 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 15:23:33.983 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 15:23:33.985 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 15:23:33.985 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 15:23:33.985 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 15:23:33.986 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.986 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.986 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.986 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      219976
+	Price=143900.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:13:30
+2021-12-20 15:23:33.987 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.987 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.987 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.987 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      231373
+	Price=143100.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:25:27
+2021-12-20 15:23:33.989 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.989 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.989 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:23:33.990 | INFO     | ftdc.trader:OnRtnTrade:713 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      247488
+	Price=142540.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:44:52
+2021-12-20 15:23:34.001 | INFO     | ftdc.trader:OnRspQrySettlementInfo:473 - 结算结果查询为空
+2021-12-20 15:23:34.001 | INFO     | ftdc.trader:OnRspQrySettlementInfo:478 - 交易端-发送结算结果确认请求成功
+2021-12-20 15:23:34.007 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:273 - 交易端-投资者结算结果确认完成
+2021-12-20 15:24:33.495 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:24:33.516 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:24:33.518 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:25:33.502 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:25:33.523 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:25:33.525 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:26:33.507 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:26:33.530 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:26:33.532 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:27:33.514 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:27:33.537 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:27:33.539 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:28:33.515 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:28:33.536 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:28:33.539 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:29:33.517 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:29:33.538 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:29:33.541 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:30:33.526 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:30:33.548 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:30:33.550 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:31:33.534 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:31:33.556 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:31:33.558 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:32:33.540 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:32:33.560 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:32:33.562 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:33:33.550 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:33:33.572 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:33:33.573 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:34:33.561 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:34:33.638 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:34:33.639 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:35:33.568 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:35:33.645 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:35:33.646 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:36:33.569 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:36:33.594 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:36:33.597 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:37:33.573 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:37:33.596 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:37:33.596 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:38:33.585 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:38:33.609 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:38:33.610 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:39:33.599 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:39:33.620 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:39:33.622 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:40:33.610 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:40:33.632 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:40:33.634 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:41:33.616 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:41:33.638 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:41:33.640 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:42:33.621 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:42:33.643 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:42:33.647 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:43:33.630 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:43:33.651 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:43:33.653 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:44:33.639 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:44:33.661 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:44:33.663 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:45:33.654 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:45:33.674 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:45:33.677 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:46:33.658 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:46:33.680 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:46:33.684 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:47:33.672 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:47:33.738 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:47:33.738 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:48:33.684 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:48:33.708 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:48:33.711 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:49:33.690 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:49:33.712 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:49:33.715 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:50:33.703 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:50:33.725 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:50:33.727 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:51:33.714 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:51:33.760 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:51:33.761 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:52:33.715 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:52:33.738 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:52:33.744 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:53:33.715 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:53:33.740 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:53:33.753 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:54:33.727 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:54:33.750 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:54:33.755 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:55:33.740 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:55:33.764 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:55:33.775 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:56:33.749 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:56:33.772 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:56:33.773 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:57:33.763 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:57:33.785 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:57:33.785 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:33.769 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:58:33.793 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:33.795 | INFO     | ftdc.trader:OnRtnOrder:706 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:55.830 | INFO     | ftdc.trader:qry_investor_position:62 - 交易端-持仓查询,InstrumentID=ni2201
+2021-12-20 15:58:55.833 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:58:55.861 | INFO     | ftdc.trader:OnFrontConnected:71 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 15:58:55.861 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 15:58:55.872 | INFO     | ftdc.trader:OnRspAuthenticate:99 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 15:58:56.239 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 15:58:56.244 | INFO     | ftdc.trader:OnRspUserLogin:110 - 交易端-收到登陆请求返回信息, SessionID=935997977,ErrorID=0,ErrorMsg=正确
+2021-12-20 15:58:56.244 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 15:58:56.245 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 15:58:56.245 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 15:58:56.245 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 15:58:56.246 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 15:58:56.246 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.246 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.246 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.247 | INFO     | ftdc.trader:OnRtnTrade:725 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      219976
+	Price=143900.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:13:30
+2021-12-20 15:58:56.247 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.247 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.247 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.247 | INFO     | ftdc.trader:OnRtnTrade:725 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      231373
+	Price=143100.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:25:27
+2021-12-20 15:58:56.248 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.248 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.248 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.249 | INFO     | ftdc.trader:OnRtnTrade:725 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      247488
+	Price=142540.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:44:52
+2021-12-20 15:58:56.249 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.253 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.253 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.253 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.253 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.254 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.254 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.254 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.254 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.254 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.255 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.255 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.255 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.255 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.255 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.256 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.256 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.256 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.256 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.256 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.257 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.268 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.268 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.268 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.269 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.269 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.269 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.269 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.269 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.270 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.270 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.270 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.270 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.271 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.271 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.271 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.271 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.272 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.272 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.272 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.285 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.285 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.285 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.285 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.285 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.285 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.286 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.286 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.286 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.286 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.286 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.287 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.287 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.287 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.287 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.287 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.288 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.288 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.288 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.300 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.300 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.301 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.301 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.301 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.301 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.301 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.302 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.302 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.302 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:58:56.302 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:58:56.303 | INFO     | ftdc.trader:OnRspQrySettlementInfo:485 - 结算结果查询为空
+2021-12-20 15:58:56.303 | INFO     | ftdc.trader:OnRspQrySettlementInfo:490 - 交易端-发送结算结果确认请求成功
+2021-12-20 15:58:56.309 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:282 - 交易端-投资者结算结果确认完成
+2021-12-20 15:59:36.141 | INFO     | ftdc.trader:OnFrontConnected:71 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 15:59:36.142 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 15:59:36.155 | INFO     | ftdc.trader:OnRspAuthenticate:99 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 15:59:36.520 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 15:59:36.526 | INFO     | ftdc.trader:OnRspUserLogin:110 - 交易端-收到登陆请求返回信息, SessionID=938627916,ErrorID=0,ErrorMsg=正确
+2021-12-20 15:59:36.527 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 15:59:36.527 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 15:59:36.528 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 15:59:36.529 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 15:59:36.529 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 15:59:36.529 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.530 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.530 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.530 | INFO     | ftdc.trader:OnRtnTrade:725 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      219976
+	Price=143900.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:13:30
+2021-12-20 15:59:36.530 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.531 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.531 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.531 | INFO     | ftdc.trader:OnRtnTrade:725 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      231373
+	Price=143100.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:25:27
+2021-12-20 15:59:36.531 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.531 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.532 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.538 | INFO     | ftdc.trader:OnRtnTrade:725 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      247488
+	Price=142540.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:44:52
+2021-12-20 15:59:36.538 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.538 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.538 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.539 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.539 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.544 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.544 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.544 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.545 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.545 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.545 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.545 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.545 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.546 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.546 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.546 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.546 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.547 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.547 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.547 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.547 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.547 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.548 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.548 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.560 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.561 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.562 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.563 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.564 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.564 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.565 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.566 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.567 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.568 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.569 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.569 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.570 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.570 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.571 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.572 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.572 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.573 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.573 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.574 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.575 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.575 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.576 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.576 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.577 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.577 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.578 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.578 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.578 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.579 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.579 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.580 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.580 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.580 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.581 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.581 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.582 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.582 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.590 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.590 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.591 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.591 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.591 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.592 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.592 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:36.592 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 15:59:36.838 | INFO     | ftdc.trader:OnRspQrySettlementInfo:485 - 结算结果查询为空
+2021-12-20 15:59:36.839 | INFO     | ftdc.trader:OnRspQrySettlementInfo:490 - 交易端-发送结算结果确认请求成功
+2021-12-20 15:59:36.844 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:282 - 交易端-投资者结算结果确认完成
+2021-12-20 15:59:46.115 | INFO     | ftdc.trader:qry_investor_position:62 - 交易端-持仓查询,InstrumentID=ni2201
+2021-12-20 15:59:46.121 | INFO     | ftdc.trader:trade:57 - 交易端-执行交易
+2021-12-20 15:59:46.138 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 15:59:46.141 | INFO     | ftdc.trader:OnRtnOrder:718 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:56.773 | INFO     | ftdc.trader:OnFrontConnected:72 - 服务端-交易服务器已连接,即将进行客户端认证
+2021-12-20 16:00:56.774 | INFO     | ftdc.trader:_auth:32 - 交易端-已发送客户端认证请求
+2021-12-20 16:00:56.787 | INFO     | ftdc.trader:OnRspAuthenticate:100 - 交易端-客户端认证成功,即将进行用户登陆
+2021-12-20 16:00:57.149 | INFO     | ftdc.trader:_login:44 - 交易端-登陆请求发送成功
+2021-12-20 16:00:57.156 | INFO     | ftdc.trader:OnRspUserLogin:111 - 交易端-收到登陆请求返回信息, SessionID=943942414,ErrorID=0,ErrorMsg=正确
+2021-12-20 16:00:57.157 | INFO     | ftdc.trader:_qry_settlement_info:53 - 已发送投资结果查询请求
+2021-12-20 16:00:57.157 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114650.0
+2021-12-20 16:00:57.158 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114650.0
+2021-12-20 16:00:57.158 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=114180.0
+2021-12-20 16:00:57.158 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=50:已撤单报单被拒绝SHFE:价格跌破跌停板
+	LimitPrice=114180.0
+2021-12-20 16:00:57.158 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.158 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.159 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.159 | INFO     | ftdc.trader:OnRtnTrade:726 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      219976
+	Price=143900.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:13:30
+2021-12-20 16:00:57.159 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.160 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.160 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.163 | INFO     | ftdc.trader:OnRtnTrade:726 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      231373
+	Price=143100.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:25:27
+2021-12-20 16:00:57.163 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.163 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.164 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=0
+	StatusMsg=全部成交报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.164 | INFO     | ftdc.trader:OnRtnTrade:726 - 交易端-成交通知
+	InstrumentID=ni2201
+	TradeID=      247488
+	Price=142540.0
+	Volume=1
+	TradeDate=20211220
+	TradeTime=14:44:52
+2021-12-20 16:00:57.164 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.164 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.164 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.165 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.165 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.165 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.165 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.165 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.166 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.175 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.175 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.175 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.176 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.176 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.176 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.176 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.177 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.177 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.177 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.177 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.178 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.178 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.178 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.178 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.178 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.179 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.179 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.179 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.190 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.190 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.190 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.191 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.191 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.191 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.191 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.192 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.192 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.192 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.192 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.192 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.193 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.193 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.193 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.193 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.194 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.194 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.206 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.206 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.206 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.206 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.207 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.207 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.207 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.207 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.207 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.208 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.208 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.208 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.208 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.209 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.209 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.209 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.209 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.209 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.221 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.221 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.221 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.222 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.222 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.222 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.222 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=a
+	StatusMsg=报单已提交
+	LimitPrice=144000.0
+2021-12-20 16:00:57.223 | INFO     | ftdc.trader:OnRtnOrder:719 - 交易端-报单通知
+	OrderStatus=5
+	StatusMsg=26:已撤单报单被拒绝SHFE:当前状态禁止此项操作
+	LimitPrice=144000.0
+2021-12-20 16:00:57.224 | INFO     | ftdc.trader:OnRspQrySettlementInfo:486 - 结算结果查询为空
+2021-12-20 16:00:57.224 | INFO     | ftdc.trader:OnRspQrySettlementInfo:491 - 交易端-发送结算结果确认请求成功
+2021-12-20 16:00:57.259 | INFO     | ftdc.trader:OnRspSettlementInfoConfirm:283 - 交易端-投资者结算结果确认完成
+2021-12-20 16:01:06.722 | INFO     | ftdc.trader:qry_investor_position:62 - 交易端-持仓查询,InstrumentID=ni2201
+2021-12-20 16:05:29.066 | INFO     | ftdc.trader:OnFrontDisconnected:80 - 交易服务器已断开连接，连接断开原因 4097
+2021-12-20 16:05:33.083 | INFO     | ftdc.trader:OnFrontDisconnected:80 - 交易服务器已断开连接，连接断开原因 4097
