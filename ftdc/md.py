@@ -18,7 +18,7 @@ from ftdc import structs
 from broker import Broker
 
 
-class MdUserApi(user_api.CThostFtdcMdSpi):
+class MdSPi(user_api.CThostFtdcMdSpi):
     """
     继承交易所CThostFtdcMdSpi，该class主要用于响应行情订阅事件
 
