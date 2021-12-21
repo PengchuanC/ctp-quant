@@ -47,9 +47,15 @@ class RedisBroker(Broker):
             self._redis = redis.Redis(connection_pool=self._pool, decode_responses=True)
 
     def do(self, data: dict):
+        """供publisher调用处理数据，此接口必须实现"""
         self.connect()
-        self._redis.xadd(self.c.name, data)
-        print(data['UpdateTime'], data['LastPrice'], data['ClosePrice'])
+        d = data
+        row = {
+            'date': d['TradingDay'], 'time': d['UpdateTime'], 'instrument_id': d['InstrumentID'],
+            'close': d['LastPrice'], 'high': d['HighestPrice'], 'low': d['LowestPrice'],
+            'upper': d['UpperLimitPrice'], 'lower': d['LowerLimitPrice']
+        }
+        self._redis.xadd(self.c.name, row)
 
     def register(self, name: str, publisher: "Publisher"):
         """注册后调用redis连接"""

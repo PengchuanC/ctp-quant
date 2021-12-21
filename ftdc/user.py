@@ -109,7 +109,7 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
         )
         logger.info("登陆成功，发出订阅行情请求")
         to_sub = [x.encode('utf-8') for x in self._subscribe]
-        ret = self._api.SubscribeMarketData(to_sub, 1)
+        ret = self._api.SubscribeMarketData(to_sub, len(to_sub))
         if ret != 0:
             logger.error("深度行情订阅失败，即将退出系统")
             exit(-1)
@@ -133,7 +133,7 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
             f"收到登出请求返回信息，UserID={pUserLogout.UserID},ErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}"
         )
         to_unsub = [x.encode('utf-8') for x in self._subscribe]
-        self._api.UnSubscribeMarketData(to_unsub, 1)
+        self._api.UnSubscribeMarketData(to_unsub, len(to_unsub))
 
     def OnRspQryMulticastInstrument(
             self,
@@ -150,7 +150,7 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
         :param bIsLast:
         :return:
         """
-        pass
+        logger.info('OnRspQryMulticastInstrument')
 
     def OnRspError(self, pRspInfo: structs.RspInfoField, nRequestID: int, bIsLast: bool):
         """
@@ -220,7 +220,6 @@ class MdUserApi(user_api.CThostFtdcMdSpi):
         :param pDepthMarketData: 本身为CThostFtdcDepthMarketDataField类
         """
         data = {x: getattr(pDepthMarketData, x) for x in structs.DepthMarketDataField._fields}
-        # TODO 对数据进行处理，如保存到数据库，推送到其他客户端或传输到redis进行处理
         self._publish(data)
 
     def OnRtnForQuoteRsp(self, pForQuoteRsp: "CThostFtdcForQuoteRspField"):

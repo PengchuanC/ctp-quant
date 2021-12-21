@@ -7,27 +7,33 @@
 
 import time
 from concurrent.futures import ThreadPoolExecutor
+from threading import Lock
 
 import arrow
 import redis
+from peewee import fn
 
 from broker import RedisBroker, RedisBrokerConfig
 from logger.logger import logger
 from ftdc.structs import DepthMarketDataField
+from database.models import HourlyQuote
 
 
 ThreadExecutor = ThreadPoolExecutor(max_workers=2)
 
 
-class RedisDispatcher(RedisBroker):
+class DatabaseDispatcher(RedisBroker):
 
     _redis: redis.Redis
+    _data = {}
+    _last = None
 
     def __init__(self, config: RedisBrokerConfig):
         super().__init__(config)
         self.c = config
         self.connect()
         self.create_group()
+        self.lock = Lock()
 
     def create_group(self):
         """查询或创建消费者组"""
@@ -50,11 +56,56 @@ class RedisDispatcher(RedisBroker):
             self._redis.delete(self.c.name)
             print('deleted')
 
-    @staticmethod
-    def proc(dataset):
-        print(dataset)
+    def proc(self, dataset):
+        for d in dataset:
+            # 将毫秒级数据转化为半小时级
+            t = arrow.get(f'{d["date"]} {d["time"]}')
+            start, end = t.span("hour")
+            mid = end.shift(minutes=-30)
+            tick = mid if t <= mid else end
+            instrument_id = d['instrument_id']
+            exist = self._data.get((tick, instrument_id))
+            if not exist:
+                self.lock.acquire()
+                self._data[(tick, instrument_id)] = {
+                    'instrument_id': d['instrument_id'], 'date': d['date'], 'time': d['time'],
+                    'open': d['close'], 'high': d['close'], 'low': d['close'], 'close': d['close'],
+                }
+                self.lock.release()
+            else:
+                high = max([exist['high'], d['high']])
+                low = min([exist['low'], d['low']])
+                self.lock.acquire()
+                self._data[(tick, instrument_id)] = {
+                    **exist, 'date': d['date'], 'time': d['time'], 'close': d['close'], 'high': high, 'low': low
+                }
+                self.lock.release()
+        # print(self._data)
+
+    def _save(self):
+        keys = list(self._data.keys())
+        max_date = max({x[0] for x in keys})
+        need_to_add = [x for x in keys if x[0] < max_date]
+        if not need_to_add:
+            return
+        self.lock.acquire()
+        data = {}
+        for key in need_to_add:
+            data[key] = self._data.pop(key)
+        self.lock.release()
+        sets = []
+        for key, v in data.items():
+            dm: arrow.Arrow = key[0]
+            dt = dm.format('YYYY-MM-DD')
+            tm = dm.format('hh:mm:ss')
+            hq = HourlyQuote(
+                instrument_id=key[1], date=dt, time=tm, open=v['open'], high=v['high'], low=v['low'], close=v['close']
+            )
+            sets.append(hq)
+        HourlyQuote.bulk_create(sets)
 
     def dispatch(self):
+        HourlyQuote.create_table()
         while True:
             exist_stream = self._redis.exists(self.c.name)
             # stream尚未创建，等待publisher创建stream
@@ -67,11 +118,12 @@ class RedisDispatcher(RedisBroker):
             # stream中没有数据可以订阅
             if not items:
                 self.destroy_stream()
-                time.sleep(10)
+                # time.sleep(10)
                 continue
             stream, records = items[0]
             if not records:
-                time.sleep(10)
+                # time.sleep(10)
+                continue
             ids = []
             dataset = []
             for item in records:
@@ -80,11 +132,11 @@ class RedisDispatcher(RedisBroker):
                 info = {x.decode(): y.decode() for x, y in info.items()}
                 dataset.append(info)
             self._redis.xack(self.c.name, self.c.name+"_group", *ids)
-            # TODO 保存数据到数据和计算bar
-            ThreadExecutor.submit(self.proc, dataset[0])
+            ThreadExecutor.submit(self.proc, dataset)
+            ThreadExecutor.submit(self._save)
 
 
 if __name__ == '__main__':
     cfg = RedisBrokerConfig('10.170.139.12')
-    rd = RedisDispatcher(cfg)
+    rd = DatabaseDispatcher(cfg)
     rd.dispatch()

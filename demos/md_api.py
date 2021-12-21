@@ -12,13 +12,9 @@ if __name__ == '__main__':
     broker = RedisBroker(RedisBrokerConfig('10.170.139.12'))
     broker.register('redis', spi)
     '''以下是7*24小时环境'''
-    api.RegisterFront("tcp://180.168.146.187:10211")
+    api.RegisterFront("tcp://180.168.146.187:10212")
     # api.RegisterFront("tcp://180.168.146.187:10131")
     api.RegisterSpi(spi)
     api.Init()
-    try:
-        api.Join()
-    except Exception as e:
-        print(e)
-    print('停止')
+    api.Join()
     api.Release()

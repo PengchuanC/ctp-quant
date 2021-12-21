@@ -30,7 +30,7 @@ def strategy(trader_spi: TraderSpi):
     while count < 10:
         time.sleep(30)
         trader_spi.qry_investor_position('ni2201', 'SHFE')
-        insert_order(trader_spi)
+        # insert_order(trader_spi)
         count += 1
 
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     )
     api = trader_api.CThostFtdcTraderApi_CreateFtdcTraderApi(f'{USERINFO}/')
     spi = TraderSpi(api, userinfo, appinfo)
-    api.RegisterFront("tcp://180.168.146.187:10130")
+    api.RegisterFront("tcp://180.168.146.187:10202")
     api.RegisterSpi(spi)
 
     api.Init()
