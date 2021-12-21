@@ -1,3 +1,5 @@
+import time
+
 from ftdc import structs
 from ftdc.md import user_api, MdSPi
 from broker.redis_broker import RedisBroker, RedisBrokerConfig
@@ -16,5 +18,11 @@ if __name__ == '__main__':
     # api.RegisterFront("tcp://180.168.146.187:10131")
     api.RegisterSpi(spi)
     api.Init()
-    api.Join()
-    api.Release()
+    while True:
+        try:
+            time.sleep(1)
+        except KeyboardInterrupt:
+            spi.logout()
+            time.sleep(5)
+            api.Release()
+            exit()

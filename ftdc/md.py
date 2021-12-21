@@ -129,11 +129,11 @@ class MdSPi(user_api.CThostFtdcMdSpi):
         :param bIsLast:
         :return:
         """
+        print('log out')
         logger.info(
             f"收到登出请求返回信息，UserID={pUserLogout.UserID},ErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}"
         )
-        to_unsub = [x.encode('utf-8') for x in self._subscribe]
-        self._api.UnSubscribeMarketData(to_unsub, len(to_unsub))
+        self.unsubscribe_data()
 
     def OnRspQryMulticastInstrument(
             self,
@@ -256,3 +256,15 @@ class MdSPi(user_api.CThostFtdcMdSpi):
 
     def set_contracts(self, contracts: List[str]):
         self._subscribe = chain.from_iterable([self._subscribe, contracts])
+
+    def unsubscribe_data(self):
+        """主动取消订阅数据"""
+        to_unsub = [x.encode('utf-8') for x in self._subscribe]
+        self._api.UnSubscribeMarketData(to_unsub, len(to_unsub))
+
+    def logout(self):
+        logout_field = user_api.CThostFtdcUserLogoutField()
+        logout_field.BrokerId = self._info.BrokerID
+        logout_field.UserID = self._info.UserID
+        self._api.ReqUserLogout(logout_field, 0)
+        logger.info('已发出退出登录请求')
