@@ -134,9 +134,3 @@ class DatabaseDispatcher(RedisBroker):
             self._redis.xack(self.c.name, self.c.name+"_group", *ids)
             ThreadExecutor.submit(self.proc, dataset)
             ThreadExecutor.submit(self._save)
-
-
-if __name__ == '__main__':
-    cfg = RedisBrokerConfig('10.170.139.12')
-    rd = DatabaseDispatcher(cfg)
-    rd.dispatch()
