@@ -17,7 +17,7 @@ class TradeMethod(object):
         input_order.BrokerID = userinfo.BrokerID
         input_order.UserID = userinfo.UserID
         input_order.InvestorID = userinfo.UserID
-        input_order.OrderPriceType = datatype.OrderPriceType.limit_price
+        input_order.OrderPriceType = datatype.OrderPriceType.limit_price  # 价格条件，默认限价
         input_order.ContingentCondition = datatype.ContingentConditionType.immediately
         input_order.TimeCondition = datatype.TimeConditionType.gfd
         input_order.VolumeCondition = datatype.VolumeConditionType.av
