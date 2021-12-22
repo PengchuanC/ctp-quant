@@ -10,7 +10,6 @@ from threading import Lock
 
 import arrow
 import redis
-from peewee import fn
 
 from broker import RedisBroker, RedisBrokerConfig
 from logger.logger import logger
@@ -134,8 +133,6 @@ class DatabaseDispatcher(RedisBroker):
         self._k_bar = {}
 
     def dispatch(self):
-        # HourlyQuote.drop_table()
-        # HourlyQuote.create_table()
         while True:
             exist_stream = self._redis.exists(self.c.name)
             # stream尚未创建，等待publisher创建stream
