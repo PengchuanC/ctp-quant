@@ -30,6 +30,5 @@ api.RegisterSpi(spi)
 api.Init()
 
 for order in example_strategy.trade():
-    # spi.trade(order)
-    # logger.info(f'执行报单，合约代码={order.InstrumentID},报价={order.LimitPrice},数量={order.VolumeTotalOriginal}')
-    print(order)
+    spi.trade(order)
+    logger.info(f'执行报单，合约代码={order.InstrumentID},报价={order.LimitPrice},数量={order.VolumeTotalOriginal}')

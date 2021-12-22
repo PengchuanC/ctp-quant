@@ -32,6 +32,7 @@ class StrategyExample(object):
 
     def trade(self):
         for quote in self.query_quote():
+            print(quote)
             if self.close_time:
                 now = arrow.now()
                 if now >= self.close_time:
@@ -40,7 +41,7 @@ class StrategyExample(object):
                     return order
                 continue
             upper = float(quote['upper'])  # 涨停价
-            chg = float(quote['close']) / float(quote['open']) - 1
+            chg = float(quote['close']) / float(quote['low']) - 1
             if chg <= 0.02:
                 order = self.tm.buy_open(self.contract, 'SHFE', upper, 1)
                 now = arrow.now()
