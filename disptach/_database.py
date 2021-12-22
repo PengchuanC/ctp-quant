@@ -5,13 +5,11 @@
 对redis缓存的行情数据进行处理，转化为分钟(30分钟，日)bar
 """
 
-import time
 from concurrent.futures import ThreadPoolExecutor
 from threading import Lock
 
 import arrow
 import redis
-import pandas as pd
 from peewee import fn
 
 from broker import RedisBroker, RedisBrokerConfig
@@ -128,8 +126,8 @@ class DatabaseDispatcher(RedisBroker):
         for value in self._k_bar.values():
             fst, snd = value
             row = DailyQuote(
-                instrument_id=fst['instrument_id'], date=snd['date'], open=float(fst['close']),
-                high=float(snd['high']), low=float(snd['low']), close=float(snd['close'])
+                instrument_id=fst['instrument_id'], date=arrow.get(snd['date']).format('YYYY-MM-DD'),
+                open=float(fst['close']), high=float(snd['high']), low=float(snd['low']), close=float(snd['close'])
             )
             data.append(row)
         DailyQuote.bulk_create(data)
