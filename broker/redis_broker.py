@@ -56,6 +56,7 @@ class RedisBroker(Broker):
             'upper': d['UpperLimitPrice'], 'lower': d['LowerLimitPrice']
         }
         self._redis.xadd(self.c.name, row)
+        print(row)
 
     def register(self, name: str, publisher: "Publisher"):
         """注册后调用redis连接"""

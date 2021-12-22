@@ -52,9 +52,8 @@ class DatabaseDispatcher(RedisBroker):
         now: arrow.Arrow = arrow.now()
         date = now.format('YYYY-MM-DD')
         if arrow.get(f'{date} 20:55:00') < now < arrow.get(f'{date} 21:00:00'):
-            print('deleting')
             self._redis.delete(self.c.name)
-            print('deleted')
+            logger.info(f'redis stream {self.c.name}已删除')
 
     def proc(self, dataset):
         for d in dataset:
@@ -97,7 +96,7 @@ class DatabaseDispatcher(RedisBroker):
         for key, v in data.items():
             dm: arrow.Arrow = key[0]
             dt = dm.format('YYYY-MM-DD')
-            tm = dm.format('hh:mm:ss')
+            tm = dm.format('HH:mm:ss')
             hq = HourlyQuote(
                 instrument_id=key[1], date=dt, time=tm, open=v['open'], high=v['high'], low=v['low'], close=v['close']
             )
@@ -105,7 +104,8 @@ class DatabaseDispatcher(RedisBroker):
         HourlyQuote.bulk_create(sets)
 
     def dispatch(self):
-        HourlyQuote.create_table()
+        # HourlyQuote.drop_table()
+        # HourlyQuote.create_table()
         while True:
             exist_stream = self._redis.exists(self.c.name)
             # stream尚未创建，等待publisher创建stream
