@@ -6,7 +6,6 @@
 策略示例，主要展示api调用
 模拟一个简单策略：判断当前涨跌幅，如果当前上涨幅度小于2%，则开一个多单，然后半小时后平掉
 """
-import time
 
 import arrow
 
@@ -14,6 +13,7 @@ from broker import RedisBrokerConfig
 from disptach import MemoryDispatcher
 from ftdc.trade import TradeMethod
 from ftdc.structs import UserLoginField
+from ftdc import datatype
 
 
 class StrategyExample(object):
@@ -37,7 +37,8 @@ class StrategyExample(object):
                 now = arrow.now()
                 if now >= self.close_time:
                     lower = float(quote['lower'])
-                    order = self.tm.buy_close(self.contract, 'SHFE', lower, 1)
+                    order = self.tm.sell_close(self.contract, 'SHFE', lower, 1)
+                    order.CombOffsetFlag = OffsetFlagType.close_today
                     return order
                 continue
             upper = float(quote['upper'])  # 涨停价

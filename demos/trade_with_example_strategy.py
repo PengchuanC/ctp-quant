@@ -29,6 +29,9 @@ api.RegisterFront("tcp://180.168.146.187:10202")
 api.RegisterSpi(spi)
 api.Init()
 
+time.sleep(3)
 for order in example_strategy.trade():
     spi.trade(order)
     logger.info(f'执行报单，合约代码={order.InstrumentID},报价={order.LimitPrice},数量={order.VolumeTotalOriginal}')
+
+api.Join()

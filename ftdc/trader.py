@@ -735,6 +735,8 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
             f'\n\tPrice={pTrade.Price}\n\tVolume={pTrade.Volume}\n\tTradeDate={pTrade.TradeDate}'
             f'\n\tTradeTime={pTrade.TradeTime}'
         )
+        for name in order.TraderField._fields:
+            print(name, getattr(pTrade, name))
 
     def OnErrRtnOrderInsert(self, pInputOrder: order.InputOrderField, pRspInfo: structs.RspInfoField):
         """报单录入错误回报"""

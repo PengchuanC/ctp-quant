@@ -17,6 +17,7 @@ class TradeMethod(object):
         input_order.BrokerID = userinfo.BrokerID
         input_order.UserID = userinfo.UserID
         input_order.InvestorID = userinfo.UserID
+        input_order.OrderRef = "1"
         input_order.OrderPriceType = datatype.OrderPriceType.limit_price  # 价格条件，默认限价
         input_order.ContingentCondition = datatype.ContingentConditionType.immediately
         input_order.TimeCondition = datatype.TimeConditionType.gfd
@@ -27,7 +28,7 @@ class TradeMethod(object):
         input_order.IsAutoSuspend = 0
         self.order = input_order
 
-    def _gen_order(self, instrument, exchange, price, volume, operation, offset):
+    def _gen_order(self, instrument, exchange, price, volume, direction, offset):
         """
         生成交易指令
         Args:
@@ -35,21 +36,21 @@ class TradeMethod(object):
             exchange: 交易所
             price: 价格
             volume: 数量
-            operation: 方向
+            direction: 方向
             offset: 开平标识
         """
         _order: order.InputOrderField = self.order
-        _order.Direction = operation
+        _order.Direction = direction  # 买或卖
         _order.InstrumentID = instrument
         _order.ExchangeID = exchange
         _order.LimitPrice = price
         _order.VolumeTotalOriginal = volume
-        _order.CombOffsetFlag = offset
+        _order.CombOffsetFlag = offset  # 开或平
         return _order
 
     def buy_open(self, instrument, exchange, price, volume):
         """
-        开多
+        买开，开多
         Args:
             instrument: 品种
             exchange: 交易所
@@ -62,20 +63,20 @@ class TradeMethod(object):
 
     def sell_open(self, instrument, exchange, price, volume):
         """
-        开空
+        卖开，开空
         """
         return self._gen_order(
             instrument, exchange, price, volume, datatype.DirectionType.sell, datatype.OffsetFlagType.open
         )
 
     def buy_close(self, instrument, exchange, price, volume):
-        """平多"""
+        """买平，平空"""
         return self._gen_order(
             instrument, exchange, price, volume, datatype.DirectionType.buy, datatype.OffsetFlagType.close
         )
 
     def sell_close(self, instrument, exchange, price, volume):
-        """平空"""
+        """卖平，平多"""
         return self._gen_order(
             instrument, exchange, price, volume, datatype.DirectionType.sell, datatype.OffsetFlagType.close
         )
