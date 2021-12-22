@@ -11,21 +11,23 @@ from threading import Lock
 
 import arrow
 import redis
+import pandas as pd
 from peewee import fn
 
 from broker import RedisBroker, RedisBrokerConfig
 from logger.logger import logger
 from ftdc.structs import DepthMarketDataField
-from database.models import HourlyQuote
+from database.models import HourlyQuote, DailyQuote
 
 
-ThreadExecutor = ThreadPoolExecutor(max_workers=2)
+ThreadExecutor = ThreadPoolExecutor(max_workers=3)
 
 
 class DatabaseDispatcher(RedisBroker):
 
     _redis: redis.Redis
     _data = {}
+    _k_bar = {}
     _last = None
 
     def __init__(self, config: RedisBrokerConfig):
@@ -34,6 +36,7 @@ class DatabaseDispatcher(RedisBroker):
         self.connect()
         self.create_group()
         self.lock = Lock()
+        self.k_lock = Lock()
 
     def create_group(self):
         """查询或创建消费者组"""
@@ -53,6 +56,7 @@ class DatabaseDispatcher(RedisBroker):
         date = now.format('YYYY-MM-DD')
         if arrow.get(f'{date} 20:55:00') < now < arrow.get(f'{date} 21:00:00'):
             self._redis.delete(self.c.name)
+            self._save_k_bar()
             logger.info(f'redis stream {self.c.name}已删除')
 
     def proc(self, dataset):
@@ -103,6 +107,34 @@ class DatabaseDispatcher(RedisBroker):
             sets.append(hq)
         HourlyQuote.bulk_create(sets)
 
+    def k_bar(self, dataset):
+        """合成日k线"""
+        for d in dataset:
+            contract = d['instrument_id']
+            if contract not in self._k_bar:
+                self._k_bar[contract] = [d]
+                continue
+            if len(self._k_bar[contract]) < 2:
+                self.k_lock.acquire()
+                self._k_bar[contract].append(d)
+                self.k_lock.release()
+                continue
+            self.k_lock.acquire()
+            self._k_bar[contract][1] = d
+            self.k_lock.release()
+
+    def _save_k_bar(self):
+        data = []
+        for value in self._k_bar.values():
+            fst, snd = value
+            row = DailyQuote(
+                instrument_id=fst['instrument_id'], date=snd['date'], open=float(fst['close']),
+                high=float(snd['high']), low=float(snd['low']), close=float(snd['close'])
+            )
+            data.append(row)
+        DailyQuote.bulk_create(data)
+        self._k_bar = {}
+
     def dispatch(self):
         # HourlyQuote.drop_table()
         # HourlyQuote.create_table()
@@ -134,3 +166,4 @@ class DatabaseDispatcher(RedisBroker):
             self._redis.xack(self.c.name, self.c.name+"_group", *ids)
             ThreadExecutor.submit(self.proc, dataset)
             ThreadExecutor.submit(self._save)
+            ThreadExecutor.submit(self.k_bar, dataset)
