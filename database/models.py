@@ -5,7 +5,7 @@
 @desc:
 """
 
-from peewee import Model, CharField, DateField, FloatField, PrimaryKeyField, TimeField
+from peewee import Model, CharField, DateField, FloatField, PrimaryKeyField, TimeField, DateTimeField
 
 from database.engine import db
 
@@ -41,5 +41,14 @@ class HourlyQuote(Model):
         database = db
 
 
+class Notification(Model):
+    id = PrimaryKeyField()
+    date = DateTimeField(verbose_name='通知时间')
+    msg = CharField(verbose_name='通知内容')
+
+    class Meta:
+        database = db
+
+
 def create_tables():
-    db.create_tables([DailyQuote, HourlyQuote])
+    db.create_tables([DailyQuote, HourlyQuote, Notification])

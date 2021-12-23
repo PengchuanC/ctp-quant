@@ -7,19 +7,22 @@
 模拟一个简单策略：判断当前涨跌幅，如果当前上涨幅度小于2%，则开一个多单，然后半小时后平掉
 """
 
+from threading import Lock
+
 import arrow
 
 from broker import RedisBrokerConfig
 from disptach import MemoryDispatcher
 from ftdc.trade import TradeMethod
 from ftdc.structs import UserLoginField
-from ftdc import datatype
+from ftdc import datatype, qry
 
 
 class StrategyExample(object):
     close_time = None
+    lock = Lock()
 
-    def __init__(self, user: UserLoginField, redis_config: RedisBrokerConfig, contract_id: str):
+    def __init__(self, user: qry.ReqUserLoginField, redis_config: RedisBrokerConfig, contract_id: str):
         self.contract = contract_id
         self.dispatcher = MemoryDispatcher(redis_config)
         self.tm = TradeMethod(user)
@@ -32,19 +35,21 @@ class StrategyExample(object):
 
     def trade(self):
         for quote in self.query_quote():
-            print(quote)
             if self.close_time:
                 now = arrow.now()
                 if now >= self.close_time:
                     lower = float(quote['lower'])
                     order = self.tm.sell_close(self.contract, 'SHFE', lower, 1)
-                    order.CombOffsetFlag = OffsetFlagType.close_today
-                    return order
+                    order.CombOffsetFlag = datatype.OffsetFlagType.close_today
+                    yield order
+                    return
                 continue
             upper = float(quote['upper'])  # 涨停价
             chg = float(quote['close']) / float(quote['low']) - 1
             if chg <= 0.02:
                 order = self.tm.buy_open(self.contract, 'SHFE', upper, 1)
                 now = arrow.now()
-                self.close_time = now.shift(minutes=30)
+                self.lock.acquire()
+                self.close_time = now.shift(minutes=10)
+                self.lock.release()
                 yield order

@@ -8,11 +8,11 @@
 
 import thosttraderapi as trader_api
 
-from ftdc import structs, order, datatype
+from ftdc import structs, order, datatype, qry
 
 
 class TradeMethod(object):
-    def __init__(self, userinfo: structs.UserLoginField):
+    def __init__(self, userinfo: qry.ReqUserLoginField):
         input_order: order.InputOrderField = trader_api.CThostFtdcInputOrderField()
         input_order.BrokerID = userinfo.BrokerID
         input_order.UserID = userinfo.UserID
