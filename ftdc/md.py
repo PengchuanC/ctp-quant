@@ -186,7 +186,7 @@ class MdSPi(user_api.CThostFtdcMdSpi):
             logger.error(f"行情订阅失败,InstrumentID={pSpecificInstrument.InstrumentID},ErrorMsg={pRspInfo.ErrorMsg}")
             return
         logger.info(f"行情订阅成功,InstrumentID={pSpecificInstrument.InstrumentID}")
-        self._subscribed = true
+        self._subscribed = True
 
     def OnRspUnSubMarketData(
             self,
