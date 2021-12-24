@@ -12,8 +12,7 @@ from threading import Event
 import thosttraderapi as trader_api
 
 from ftdc import rsp, qry, order
-from trader.base import BaseTradeBroker
-from logger.logger import logger
+from trader.base import BaseTradeBroker, logger
 
 
 class TraderSpi(trader_api.CThostFtdcTraderSpi):
@@ -63,7 +62,10 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
     def trade(self, order_info: order.InputOrderField):
         """执行下单指令"""
         # 执行下单前，需等待上一单完成
-        self.event.wait()
+        logger.info(
+            f'\napi-执行下单\n\tInstrumentID={order_info.InstrumentID}\n\tPrice|Volume|Direction'
+            f'\n\t{order_info.LimitPrice}|{order_info.VolumeTotalOriginal}|{order_info.Direction}'
+        )
         self.t_api.ReqOrderInsert(order_info, 0)
 
     def req_authenticate(self, pReqAuthenticateField: qry.ReqAuthenticateField, nRequestID: int = 0):
@@ -86,13 +88,20 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         self.user = pReqUserLoginField
         self.queue.put((self.t_api.ReqUserLogin, (login_field, nRequestID)))
 
-    def req_qry_settlement_info_confirm(self, nRequestID: int = 0):
+    def req_qry_settlement_info(self, nRequestID: int = 0):
         """请求查询结算信息确认"""
-        info: qry.QrySettlementInfoConfirmField = trader_api.CThostFtdcQrySettlementInfoConfirmField()
+        info: qry.QrySettlementInfoField = trader_api.CThostFtdcQrySettlementInfoField()
         info.BrokerID = self.user.BrokerID
         info.InvestorID = self.user.UserID
-        info.AccountID = self.user.UserID
-        self.queue.put((self.t_api.ReqQrySettlementInfoConfirm, (info, nRequestID)))
+        info.TradingDay = self.get_tradingday()
+        self.queue.put((self.t_api.ReqQrySettlementInfo, (info, nRequestID)))
+
+    def req_qry_settlement_info_confirm(self):
+        """请求查询结算信息确认响应"""
+        confirm: qry.SettlementInfoConfirmField = trader_api.CThostFtdcSettlementInfoConfirmField()
+        confirm.BrokerID = self.user.BrokerID
+        confirm.InvestorID = self.user.UserID
+        self.t_api.ReqSettlementInfoConfirm(confirm, 0)
 
     def qry_investor_position(self, instrument_id: str, exchange_id: str):
         """查询投资者持仓明细"""
@@ -103,6 +112,20 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         field.ExchangeID = exchange_id
         field.InstrumentID = instrument_id
         self.t_api.ReqQryInvestorPosition(field, 0)
+
+    def qry_instrument(self, instrument_id: str, exchange_id: str):
+        """请求查询合约"""
+        field: qry.QryInstrumentField = trader_api.CThostFtdcQryInstrumentField()
+        field.InstrumentID = instrument_id
+        field.ExchangeID = exchange_id
+        self.t_api.ReqQryInstrument(field, 0)
+
+    def qry_depth_market_data(self, instrument_id: str, exchange_id: str):
+        """请求查询行情"""
+        field: qry.QryDepthMarketDataField = trader_api.CThostFtdcQryDepthMarketDataField()
+        field.InstrumentID = instrument_id
+        field.ExchangeID = exchange_id
+        self.t_api.ReqQryDepthMarketData(field, 0)
 
     def OnFrontConnected(self):
         """当客户端与交易后台建立起通信连接时（还未登录前），该方法被调用。"""
@@ -116,12 +139,19 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         """
         self.tb.on_disconnect(nReason)
 
-    def OnRspQrySettlementInfoConfirm(
+    def OnRspQrySettlementInfo(
+            self, pSettlementInfo: rsp.SettlementInfoField,
+            pRspInfo: rsp.RspInfoField, nRequestID: int, bIsLast: bool
+    ):
+        """请求查询结算信息响应"""
+        self.tb.on_settlement(pSettlementInfo)
+
+    def OnRspSettlementInfoConfirm(
             self, pSettlementInfoConfirm: rsp.SettlementInfoConfirmField,
             pRspInfo: rsp.RspInfoField, nRequestID: int, bIsLast: bool
     ):
         """请求查询结算信息确认响应"""
-        self.tb.on_settement_confirm(pSettlementInfoConfirm)
+        self.tb.on_settlement_confirm(pSettlementInfoConfirm)
 
     def OnRspUserLogin(
             self, pRspUserLogin: rsp.RspUserLoginField, pRspInfo: rsp.RspInfoField, nRequestID: int, bIsLast: bool
@@ -152,9 +182,7 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
 
     def OnErrRtnOrderInsert(self, pInputOrder: order.InputOrderField, pRspInfo: rsp.RspInfoField):
         """报单录入错误回报"""
-        logger.info(f'spi-报单录入错误,OnErrRtnOrderInsert')
-        self.event.set()
-        self.tb.on_order_err(pInputOrder)
+        self.tb.on_order_err(pInputOrder, pRspInfo)
 
     def OnRspQryInvestorPosition(
             self, pInvestorPosition: rsp.InvestorPositionField,

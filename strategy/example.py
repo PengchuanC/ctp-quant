@@ -7,8 +7,6 @@
 模拟一个简单策略：判断当前涨跌幅，如果当前上涨幅度小于2%，则开一个多单，然后半小时后平掉
 """
 
-from threading import Lock
-
 import arrow
 
 from broker import RedisBrokerConfig
@@ -20,7 +18,6 @@ from ftdc import datatype, qry
 
 class StrategyExample(object):
     close_time = None
-    lock = Lock()
 
     def __init__(self, user: qry.ReqUserLoginField, redis_config: RedisBrokerConfig, contract_id: str):
         self.contract = contract_id
@@ -42,14 +39,12 @@ class StrategyExample(object):
                     order = self.tm.sell_close(self.contract, 'SHFE', lower, 1)
                     order.CombOffsetFlag = datatype.OffsetFlagType.close_today
                     yield order
-                    return
+                    self.close_time = arrow.now().shift(minutes=1)
                 continue
             upper = float(quote['upper'])  # 涨停价
             chg = float(quote['close']) / float(quote['low']) - 1
-            if chg <= 0.02:
+            if chg <= 0.1:
                 order = self.tm.buy_open(self.contract, 'SHFE', upper, 1)
                 now = arrow.now()
-                self.lock.acquire()
-                self.close_time = now.shift(minutes=10)
-                self.lock.release()
+                self.close_time = now.shift(minutes=1)
                 yield order

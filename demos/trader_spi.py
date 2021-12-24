@@ -33,6 +33,7 @@ trader_spi.register_broker(broker)
 trader_spi.register_spi()
 trader_spi.req_authenticate(appinfo)
 trader_spi.req_user_login(userinfo)
+trader_spi.req_qry_settlement_info()
 trader_spi.init()
 for order_info in se.trade():
     trader_spi.tb.insert_order(order_info)

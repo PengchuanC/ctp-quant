@@ -35,6 +35,19 @@ class RspUserLoginField(object):
 
 
 @dataclass
+class SettlementInfoField(object):
+    """投资者结算结果"""
+    TradingDay: str
+    SettlementID: str
+    BrokerID: str
+    InvestorID: str
+    SequenceNo: str
+    Content: str
+    AccountID: str
+    CurrencyID: str
+
+
+@dataclass
 class SettlementInfoConfirmField(object):
     """投资者结算结果确认信息"""
     BrokerID: int  # 经纪公司代码
@@ -52,7 +65,7 @@ class InvestorPositionField(object):
     InstrumentID: str  # 合约代码
     BrokerID: str  # 经纪公司代码
     InvestorID: str  # 投资者代码
-    PosiDirection: str  # 持仓多空方向
+    PosiDirection: str  # 持仓多空方向 净 1, 多头 2, 空头 3
     HedgeFlag: str  # 投机套保标志
     PositionDate: str  # 持仓日期
     YdPosition: int  # 上日持仓

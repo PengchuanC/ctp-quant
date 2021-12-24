@@ -37,12 +37,18 @@ class ReqAuthenticateField(object):
 
 
 @dataclass
-class QrySettlementInfoConfirmField(object):
-    """查询结算信息确认域"""
+class QrySettlementInfoField(object):
+    """查询投资者结算结果"""
     BrokerID: str
     InvestorID: str
     AccountID: str
+    TradingDay: str
     CurrencyID: str
+
+
+class QrySettlementInfoConfirmField(QrySettlementInfoField):
+    """查询结算信息确认域"""
+    pass
 
 
 @dataclass
@@ -53,3 +59,19 @@ class QryInvestorPositionField(object):
     InstrumentID: str
     ExchangeID: str
     InvestUnitID: str = None
+
+
+@dataclass
+class QryInstrumentField(object):
+    """查询合约"""
+    InstrumentID: str
+    ExchangeID: str
+    ExchangeInstID: str = None  # 合约在交易所的代码
+    ProductID: str = None  # 产品代码
+
+
+@dataclass
+class QryDepthMarketDataField(object):
+    """查询行情"""
+    InstrumentID: str
+    ExchangeID: str

@@ -32,7 +32,6 @@ class MemoryDispatcher(DatabaseDispatcher):
             exist_stream = self._redis.exists(self.c.name)
             # stream尚未创建，等待publisher创建stream
             if not exist_stream:
-                time.sleep(1)
                 continue
             items = self._redis.xreadgroup(
                 self.c.name + '_group', 'consumer-2', {self.c.name: '>'}, count=1000
