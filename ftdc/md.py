@@ -56,6 +56,7 @@ class MdSPi(user_api.CThostFtdcMdSpi):
 
     _brokers = {}
     _subscribe = []
+    _subscribed = False
 
     def __init__(self, api: "CThostFtdcMdApi", userinfo: structs.UserLoginField):
         user_api.CThostFtdcMdSpi.__init__(self)
@@ -107,6 +108,8 @@ class MdSPi(user_api.CThostFtdcMdSpi):
         logger.info(
             f"收到登陆请求返回信息，SessionID={pRspUserLogin.SessionID},ErrorID={pRspInfo.ErrorID},ErrorMsg={pRspInfo.ErrorMsg}"
         )
+        if self._subscribed:
+            return
         logger.info("登陆成功，发出订阅行情请求")
         to_sub = [x.encode('utf-8') for x in self._subscribe]
         ret = self._api.SubscribeMarketData(to_sub, len(to_sub))
@@ -183,6 +186,7 @@ class MdSPi(user_api.CThostFtdcMdSpi):
             logger.error(f"行情订阅失败,InstrumentID={pSpecificInstrument.InstrumentID},ErrorMsg={pRspInfo.ErrorMsg}")
             return
         logger.info(f"行情订阅成功,InstrumentID={pSpecificInstrument.InstrumentID}")
+        self._subscribed = true
 
     def OnRspUnSubMarketData(
             self,
