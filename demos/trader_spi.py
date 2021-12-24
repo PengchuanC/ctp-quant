@@ -4,6 +4,7 @@
 @file trader_spi.py
 @desc:
 """
+import time
 
 from settings.settings import USERINFO
 
@@ -35,6 +36,15 @@ trader_spi.req_authenticate(appinfo)
 trader_spi.req_user_login(userinfo)
 trader_spi.req_qry_settlement_info()
 trader_spi.init()
-for order_info in se.trade():
-    trader_spi.tb.insert_order(order_info)
-trader_spi.join()
+# for order_info in se.trade():
+#     trader_spi.tb.insert_order(order_info)
+count = 0
+time.sleep(5)
+while count < 10:
+    print("**********")
+    print(trader_spi.tb.get_instrument(contract, 'SHFE'))
+    print(trader_spi.tb.get_market_data(contract, 'SHFE'))
+    time.sleep(2)
+    count += 1
+exit(1)
+# trader_spi.join()

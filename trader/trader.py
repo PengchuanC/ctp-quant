@@ -119,6 +119,7 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         field.InstrumentID = instrument_id
         field.ExchangeID = exchange_id
         self.t_api.ReqQryInstrument(field, 0)
+        logger.info('spi-查询合约信息')
 
     def qry_depth_market_data(self, instrument_id: str, exchange_id: str):
         """请求查询行情"""
@@ -126,6 +127,7 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
         field.InstrumentID = instrument_id
         field.ExchangeID = exchange_id
         self.t_api.ReqQryDepthMarketData(field, 0)
+        logger.info('spi-查询合约行情')
 
     def OnFrontConnected(self):
         """当客户端与交易后台建立起通信连接时（还未登录前），该方法被调用。"""
@@ -190,3 +192,16 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
     ):
         """请求查询投资者持仓响应"""
         self.tb.on_investor_position(pInvestorPosition)
+
+    def OnRspQryInstrument(
+            self,
+            pInstrument: rsp.InstrumentField, pRspInfo: rsp.RspInfoField, nRequestID: int, bIsLast: bool
+    ):
+        """请求查询合约响应"""
+        self.tb.on_instrument(pInstrument)
+
+    def OnRspQryDepthMarketData(
+            self, pDepthMarketData: rsp.DepthMarketDataField, pRspInfo: rsp.RspInfoField, nRequestID: int, bIsLast: bool
+    ):
+        """请求查询行情响应"""
+        self.tb.on_market(pDepthMarketData)

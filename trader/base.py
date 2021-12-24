@@ -5,7 +5,7 @@
 @desc:
 """
 import time
-from typing import Callable
+from typing import Callable, Optional
 from queue import Queue
 from threading import Lock
 from concurrent.futures import ThreadPoolExecutor
@@ -92,11 +92,26 @@ class BaseTradeBroker(object):
             'instrument_id': p.InstrumentID, 'date': p.TradingDay, 'direction': p.PosiDirection,
             'position': float(p.Position), 'profit': float(p.PositionProfit)
         }
-        print(self.data['position'][p.InstrumentID])
 
-    def get_position(self, instrument_id: str):
+    def get_position(self, instrument_id: str) -> dict:
         """获取持仓"""
         return self.data['position'].get(instrument_id)
+
+    def get_instrument(self, instrument_id: str, exchange_id: str) -> Optional[rsp.InstrumentField]:
+        """获取合约信息"""
+        self.spi.qry_instrument(instrument_id, exchange_id)
+        self.event.wait(timeout=2)
+        data = self.data.get('instrument')
+        self.event.clear()
+        return data
+
+    def get_market_data(self, instrument_id: str, exchange_id: str) -> Optional[rsp.DepthMarketDataField]:
+        """获取合约行情信息"""
+        self.spi.qry_depth_market_data(instrument_id, exchange_id)
+        self.event.wait(timeout=2)
+        data = self.data.get('market_data')
+        self.event.clear()
+        return data
 
     def on_cancel(self):
         """执行撤单"""
@@ -114,6 +129,17 @@ class BaseTradeBroker(object):
         if not self._monitor:
             self.pool.submit(self.trade_loop)
             self._monitor = True
+
+    def on_instrument(self, instrument: rsp.InstrumentField):
+        """查询合约响应"""
+        self.data['instrument'] = instrument
+        self.event.set()
+
+    def on_market_data(self, md: rsp.DepthMarketDataField):
+        """查询行情响应"""
+        print('行情响应')
+        self.data['market_data'] = md
+        self.event.set()
 
     def trade_loop(self):
         """交易指令监听"""

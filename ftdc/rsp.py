@@ -111,3 +111,88 @@ class InvestorPositionField(object):
     PositionCostOffset: int  # 大商所持仓成本差值，只有大商所使用
     TasPosition: int  # tas持仓手数
     TasPositionCost: int  # tas持仓成本
+
+
+@dataclass
+class InstrumentField(object):
+    """合约"""
+    InstrumentID: str  # 合约代码
+    ExchangeID: str  # 交易所代码
+    InstrumentName: str  # 合约名称
+    ExchangeInstID: str  # 合约在交易所的代码
+    ProductID: str  # 产品代码
+    ProductClass: str  # 产品类型
+    DeliveryYear: int  # 交割年份
+    DeliveryMonth: int  # 交割月
+    MaxMarketOrderVolume: int  # 市价单最大下单量
+    MinMarketOrderVolume: int  # 市价单最小下单量
+    MaxLimitOrderVolume: int  # 限价单最大下单量
+    MinLimitOrderVolume: int  # 限价单最小下单量
+    VolumeMultiple: int  # 合约数量乘数
+    PriceTick: float  # 最小变动价位
+    CreateDate: str  # 创建日
+    OpenDate: str  # 上市日
+    ExpireDate: str  # 到期日
+    StartDelivDate: str  # 开始交割日
+    EndDelivDate: str  # 结束交割日
+    InstLifePhase: str  # 合约生命周期状态
+    IsTrading: int  # 当前是否交易
+    PositionType: str  # 持仓类型
+    PositionDateType: str  # 持仓日期类型
+    LongMarginRatio: float  # 多头保证金率
+    ShortMarginRatio: float  # 空头保证金率
+    MaxMarginSideAlgorithm: str  # 是否使用大额单边保证金算法
+    UnderlyingInstrID: str  # 基础商品代码
+    StrikePrice: float  # 执行价
+    OptionsType: str  # 期权类型
+    UnderlyingMultiple: float  # 合约基础商品乘数
+    CombinationType: str  # 组合类型
+
+
+@dataclass
+class DepthMarketDataField(object):
+    """深度行情"""
+    TradingDay: str  # 交易日
+    InstrumentID: str  # 合约代码
+    ExchangeID: str  # 交易所代码
+    ExchangeInstID: str  # 合约在交易所的代码
+    LastPrice: float  # 最新价
+    PreSettlementPrice: float  # 上次结算价
+    PreClosePrice: float  # 昨收盘
+    PreOpenInterest: int  # 昨持仓量
+    OpenPrice: float  # 今开盘
+    HighestPrice: float  # 最高价
+    LowestPrice: float  # 最低价
+    Volume: int  # 数量
+    Turnover: float  # 成交金额
+    OpenInterest: float  # 持仓量
+    ClosePrice: float  # 今收盘
+    SettlementPrice: float  # 本次结算价
+    UpperLimitPrice: float  # 涨停板价
+    LowerLimitPrice: float  # 跌停板价
+    PreDelta: float  # 昨虚实度
+    CurrDelta: float  # 今虚实度
+    UpdateTime: str  # 最后修改时间
+    UpdateMillisec: str  # 最后修改毫秒
+    BidPrice1: float  # 申买价一
+    BidVolume1: int  # 申买量一
+    AskPrice1: float  # 申卖价一
+    AskVolume1: int  # 申卖量一
+    BidPrice2: float  # 申买价二
+    BidVolume2: int  # 申买量二
+    AskPrice2: float  # 申卖价二
+    AskVolume2: int  # 申卖量二
+    BidPrice3: float  # 申买价三
+    BidVolume3: int  # 申买量三
+    AskPrice3: float  # 申卖价三
+    AskVolume3: int  # 申卖量三
+    BidPrice4: float  # 申买价四
+    BidVolume4: int  # 申买量四
+    AskPrice4: float  # 申卖价四
+    AskVolume4: int  # 申卖量四
+    BidPrice5: float  # 申买价五
+    BidVolume5: int  # 申买量五
+    AskPrice5: float  # 申卖价五
+    AskVolume5: int  # 申卖量五
+    AveragePrice: float  # 当日均价
+    ActionDay: str  # 业务日期
