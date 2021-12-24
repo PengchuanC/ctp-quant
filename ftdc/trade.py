@@ -13,20 +13,7 @@ from ftdc import structs, order, datatype, qry
 
 class TradeMethod(object):
     def __init__(self, userinfo: qry.ReqUserLoginField):
-        input_order: order.InputOrderField = trader_api.CThostFtdcInputOrderField()
-        input_order.BrokerID = userinfo.BrokerID
-        input_order.UserID = userinfo.UserID
-        input_order.InvestorID = userinfo.UserID
-        input_order.OrderRef = "1"
-        input_order.OrderPriceType = datatype.OrderPriceType.limit_price  # 价格条件，默认限价
-        input_order.ContingentCondition = datatype.ContingentConditionType.immediately
-        input_order.TimeCondition = datatype.TimeConditionType.gfd
-        input_order.VolumeCondition = datatype.VolumeConditionType.av
-        input_order.CombHedgeFlag = datatype.ExClientIDType.hedge
-        input_order.MinVolume = 0
-        input_order.ForceCloseReason = trader_api.THOST_FTDC_FCC_NotForceClose
-        input_order.IsAutoSuspend = 0
-        self.order = input_order
+        self.userinfo = userinfo
 
     def _gen_order(self, instrument, exchange, price, volume, direction, offset):
         """
@@ -39,14 +26,27 @@ class TradeMethod(object):
             direction: 方向
             offset: 开平标识
         """
-        _order: order.InputOrderField = self.order
-        _order.Direction = direction  # 买或卖
-        _order.InstrumentID = instrument
-        _order.ExchangeID = exchange
-        _order.LimitPrice = price
-        _order.VolumeTotalOriginal = volume
-        _order.CombOffsetFlag = offset  # 开或平
-        return _order
+        input_order: order.InputOrderField = trader_api.CThostFtdcInputOrderField()
+        input_order.BrokerID = self.userinfo.BrokerID
+        input_order.UserID = self.userinfo.UserID
+        input_order.InvestorID = self.userinfo.UserID
+        input_order.OrderRef = "1"
+        input_order.OrderPriceType = datatype.OrderPriceType.limit_price  # 价格条件，默认限价
+        input_order.ContingentCondition = datatype.ContingentConditionType.immediately
+        input_order.TimeCondition = datatype.TimeConditionType.gfd
+        input_order.VolumeCondition = datatype.VolumeConditionType.av
+        input_order.CombHedgeFlag = datatype.ExClientIDType.hedge
+        input_order.MinVolume = 0
+        input_order.ForceCloseReason = trader_api.THOST_FTDC_FCC_NotForceClose
+        input_order.IsAutoSuspend = 0
+
+        input_order.Direction = direction  # 买或卖
+        input_order.InstrumentID = instrument
+        input_order.ExchangeID = exchange
+        input_order.LimitPrice = price
+        input_order.VolumeTotalOriginal = volume
+        input_order.CombOffsetFlag = offset  # 开或平
+        return input_order
 
     def buy_open(self, instrument, exchange, price, volume):
         """
