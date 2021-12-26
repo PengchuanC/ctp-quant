@@ -12,7 +12,6 @@ import arrow
 from broker import RedisBrokerConfig
 from disptach import MemoryDispatcher
 from ftdc.trade import TradeMethod
-from ftdc.structs import UserLoginField
 from ftdc import datatype, qry
 
 
