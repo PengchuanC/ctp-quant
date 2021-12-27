@@ -34,7 +34,7 @@ class MemoryDispatcher(DatabaseDispatcher):
             if not exist_stream:
                 continue
             items = self._redis.xreadgroup(
-                self.c.name + '_group', 'consumer-2', {self.c.name: '>'}, count=1000
+                self.c.name + '_group', 'consumer-2', {self.c.name: '>'}, count=10
             )
             # stream中没有数据可以订阅
             if not items:

@@ -204,4 +204,4 @@ class TraderSpi(trader_api.CThostFtdcTraderSpi):
             self, pDepthMarketData: rsp.DepthMarketDataField, pRspInfo: rsp.RspInfoField, nRequestID: int, bIsLast: bool
     ):
         """请求查询行情响应"""
-        self.tb.on_market(pDepthMarketData)
+        self.tb.on_market_data(pDepthMarketData)

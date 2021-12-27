@@ -11,7 +11,7 @@ from settings.settings import USERINFO
 from trader.trader import TraderSpi
 from trader.base import BaseTradeBroker
 from ftdc import qry
-from strategy.example import StrategyExample
+from strategy.trend_trade import TrendTradeStrategy
 from broker import RedisBrokerConfig
 
 
@@ -26,7 +26,7 @@ contract = 'ni2201'
 
 trader_spi = TraderSpi()
 broker = BaseTradeBroker()
-se = StrategyExample(userinfo, rbc, contract)
+tts = TrendTradeStrategy(rbc, contract)
 
 trader_spi.create_trader_api(USERINFO)
 trader_spi.register_front(front)
@@ -36,15 +36,10 @@ trader_spi.req_authenticate(appinfo)
 trader_spi.req_user_login(userinfo)
 trader_spi.req_qry_settlement_info()
 trader_spi.init()
-# for order_info in se.trade():
-#     trader_spi.tb.insert_order(order_info)
-count = 0
+
 time.sleep(5)
-while count < 10:
-    print("**********")
-    print(trader_spi.tb.get_instrument(contract, 'SHFE'))
-    print(trader_spi.tb.get_market_data(contract, 'SHFE'))
-    time.sleep(2)
-    count += 1
+print("**********")
+for i in tts.trade(5, 34, 7):
+    print(i)
 exit(1)
 # trader_spi.join()

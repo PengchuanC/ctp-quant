@@ -13,8 +13,3 @@ class Broker(metaclass=abc.ABCMeta):
     def do(self, *args, **kwargs):
         """回调函数，供publisher调用"""
         pass
-
-    @abc.abstractmethod
-    def register(self, name, publisher: "Publisher"):
-        """注册到publisher"""
-        pass

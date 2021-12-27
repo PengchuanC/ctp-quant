@@ -7,17 +7,12 @@ from settings.settings import USERINFO
 
 
 if __name__ == '__main__':
-    userinfo = structs.UserLoginField(BrokerID='9999', UserID='195076', Password='Asin#940213')
-    api = user_api.CThostFtdcMdApi_CreateFtdcMdApi(f'{USERINFO}/')
-    spi = MdSPi(api, userinfo)
+    spi = MdSPi()
     spi.set_contracts(['ni2201', 'cu2201'])
     broker = RedisBroker(RedisBrokerConfig('10.170.139.12'))
-    broker.register('redis', spi)
-    '''以下是7*24小时环境'''
-    api.RegisterFront("tcp://180.168.146.187:10212")
-    # api.RegisterFront("tcp://180.168.146.187:10131")
-    api.RegisterSpi(spi)
-    api.Init()
+    spi.register_broker('redis', broker)
+
+    spi.init()
     while True:
         try:
             time.sleep(1)

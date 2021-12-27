@@ -58,11 +58,6 @@ class RedisBroker(Broker):
         self._redis.xadd(self.c.name, row)
         print(row)
 
-    def register(self, name: str, publisher: "Publisher"):
-        """注册后调用redis连接"""
-        publisher.register(name, self)
-        self.connect()
-
 
 if __name__ == '__main__':
     cfg = RedisBrokerConfig('10.170.139.12')

@@ -16,6 +16,12 @@ from ftdc.trade import TradeMethod
 from ftdc import datatype, qry, order
 
 
+def market_data(config: RedisBrokerConfig):
+    md = MemoryDispatcher(config=config)
+    for i in md.dispatch():
+        yield i
+
+
 class MACD(object):
     """计算MACD指标"""
 
@@ -63,12 +69,31 @@ class MACD(object):
 
 class TrendTradeStrategy(object):
     """cta策略"""
+    _data = []
+
+    def __init__(self, dp_config: RedisBrokerConfig, contract: str):
+        self.md = market_data(dp_config)
+        self.contract = contract
 
     @staticmethod
     def macd(data, short: int, long: int, length: int):
         """计算MACD"""
         return MACD(data).macd(short, long, length)
 
-    def trade(self) -> Generator[order.InputOrderField]:
+    def strategy(self, short: int, long: int, length: int):
+        if len(self._data) < long:
+            return
+        else:
+            self._data = self._data[-long:]
+        return self.macd(self._data, short, long, length)
+
+    def trade(self, short: int, long: int, length: int):
         """生成交易指令"""
-        yield order.InputOrderField
+        for quote in self.md:
+            if quote['instrument_id'] != self.contract:
+                continue
+            self._data.append(float(quote['close']))
+            macd = self.strategy(short, long, length)
+            print("macd", macd)
+            if macd:
+                yield macd

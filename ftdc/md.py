@@ -14,6 +14,8 @@ from logger.logger import logger
 
 import thostmduserapi as user_api
 
+from settings.settings import USERINFO
+from settings import configs
 from ftdc import structs
 from broker import Broker
 
@@ -58,10 +60,38 @@ class MdSPi(user_api.CThostFtdcMdSpi):
     _subscribe = []
     _subscribed = False
 
-    def __init__(self, api: "CThostFtdcMdApi", userinfo: structs.UserLoginField):
+    api = None
+
+    def __init__(self):
         user_api.CThostFtdcMdSpi.__init__(self)
-        self._api = api
-        self._info = userinfo
+        self._info = configs.USER
+        self.create_md_api()
+        self.register_spi()
+        self.register_front()
+
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, '_instance'):
+            orig = super(MdSPi, cls)
+            cls._instance = orig.__new__(cls)
+        return cls._instance
+
+    def create_md_api(self):
+        """创建行情api"""
+        self.api = user_api.CThostFtdcMdApi_CreateFtdcMdApi(f'{USERINFO}/')
+
+    def register_spi(self):
+        """注册行情回调服务"""
+        self.api.RegisterSpi(self)
+
+    def register_front(self):
+        """注册行情前置服务"""
+        self.api.RegisterFront(configs.MD_FRONT)
+
+    def init(self):
+        self.api.Init()
+
+    def join(self):
+        self.api.Join()
 
     def OnFrontConnected(self):
         """
@@ -112,7 +142,7 @@ class MdSPi(user_api.CThostFtdcMdSpi):
             return
         logger.info("登陆成功，发出订阅行情请求")
         to_sub = [x.encode('utf-8') for x in self._subscribe]
-        ret = self._api.SubscribeMarketData(to_sub, len(to_sub))
+        ret = self.api.SubscribeMarketData(to_sub, len(to_sub))
         if ret != 0:
             logger.error("深度行情订阅失败，即将退出系统")
             exit(-1)
@@ -240,7 +270,7 @@ class MdSPi(user_api.CThostFtdcMdSpi):
         login_field.UserID = self._info.UserID
         login_field.Password = self._info.Password
         login_field.UserProductInfo = "python dll"
-        ret = self._api.ReqUserLogin(login_field, 0)
+        ret = self.api.ReqUserLogin(login_field, 0)
         if ret == 0:
             logger.info("登陆请求发送成功")
         else:
@@ -253,7 +283,7 @@ class MdSPi(user_api.CThostFtdcMdSpi):
         for name, broker in self._brokers.items():
             broker.do(data)
 
-    def register(self, name: str, broker: Broker):
+    def register_broker(self, name: str, broker: Broker):
         """注册broker，用户处理数据"""
         self._brokers[name] = broker
         logger.info(f"数据处理Broker {name} 挂载成功")
@@ -264,11 +294,11 @@ class MdSPi(user_api.CThostFtdcMdSpi):
     def unsubscribe_data(self):
         """主动取消订阅数据"""
         to_unsub = [x.encode('utf-8') for x in self._subscribe]
-        self._api.UnSubscribeMarketData(to_unsub, len(to_unsub))
+        self.api.UnSubscribeMarketData(to_unsub, len(to_unsub))
 
     def logout(self):
         logout_field = user_api.CThostFtdcUserLogoutField()
         logout_field.BrokerId = self._info.BrokerID
         logout_field.UserID = self._info.UserID
-        self._api.ReqUserLogout(logout_field, 0)
+        self.api.ReqUserLogout(logout_field, 0)
         logger.info('已发出退出登录请求')
